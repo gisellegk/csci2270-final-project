@@ -112,12 +112,54 @@ bool HashTableBST::insertItem(int key)
 }
 
 /* Delete Functions */ 
-node* HashTableBST::deleteFromBST(node* currNode, int key){
-
+node* HashTableBST::getMinValueNode(node* currNode){
+    if(currNode->left == NULL){
+      return currNode;
+    }
+    return getMinValueNode(currNode->left);
 }
 node* HashTableBST::deleteItem(int key){
 
 
+}
+
+node* HashTableBST::deleteFromBST(node *currNode, int value)
+{
+  if(currNode == NULL) {
+    std::cout << "cannot find node to delete." << std::endl;
+    return NULL;  
+  }
+  else if(value < currNode->key) currNode->left = deleteFromBST(currNode->left, value);
+  else if(value > currNode->key) currNode->right = deleteFromBST(currNode->right, value);
+  else // We found the node with the value
+  {
+    //TODO Case : No child
+    if(currNode->left == NULL && currNode->right == NULL) 
+    {
+      // delete currNode
+      return NULL;
+    }
+    //TODO Case : Only right child
+    else if(currNode->left == NULL) {
+      return currNode->right;
+    }
+    //TODO Case : Only left child
+    else if(currNode->right == NULL) {
+      return currNode->left;
+    }
+    //TODO Case: Both left and right child
+    else
+    {
+      ///Replace with Minimum from right subtree
+      node* minValueNode = getMinValueNode(currNode->right);
+      deleteFromBST(currNode, minValueNode->key);
+      minValueNode->left = currNode->left;
+      minValueNode->right = currNode->right;
+      return minValueNode;
+    }
+
+  }
+return currNode;
 }
 
 
@@ -135,71 +177,3 @@ void HashTableBST::printTable()
     }
 
  }
-
-Node* BST::getMaxValueNode(Node* currNode){
-    if(currNode->right == NULL){
-        return currNode;
-    }
-    return getMaxValueNode(currNode->right);
-}
-
-Node* BST::getMinValueNode(Node* currNode){
-
-    if(currNode->left == NULL){
-      return currNode;
-    }
-    return getMinValueNode(currNode->left);
-}
-
-
-//--------------------------- Delete a Node ------------------------------------------------
-
-// This function deletes the Node with 'value' as it's key. This is to be called inside removeRange() function
-// SILVER TODO Complete the implementation of this function
-Node* BST::deleteNode(Node *currNode, int value)
-{
-
-  if(currNode == NULL)
-  {
-    return NULL;
-  }
-  else if(value < currNode->key)
-  {
-    currNode->left = deleteNode(currNode->left, value);
-  }
-  else if(value > currNode->key)
-  {
-    currNode->right = deleteNode(currNode->right, value);
-  }
-  // We found the node with the value
-  else
-  {
-    //TODO Case : No child
-    if(currNode->left == NULL && currNode->right == NULL)
-    {
-        return NULL;
-    }
-    //TODO Case : Only right child
-    else if(currNode->left == NULL)
-    {
-        return currNode->right;
-    }
-    //TODO Case : Only left child
-    else if(currNode->right == NULL)
-    {
-        return currNode->left;
-    }
-    //TODO Case: Both left and right child
-    else
-    {
-      ///Replace with Minimum from right subtree
-      Node* minValueNode = getMinValueNode(currNode->right);
-      deleteNode(currNode, minValueNode->key);
-      minValueNode->left = currNode->left;
-      minValueNode->right = currNode->right;
-      return minValueNode;
-    }
-
-  }
-return currNode;
-}
