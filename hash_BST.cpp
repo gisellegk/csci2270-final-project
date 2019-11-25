@@ -15,6 +15,9 @@ HashTableBST::HashTableBST(int hashFunctSelect)
     hashFunctionSelect = hashFunctSelect;
 }
 
+
+/* Private Functions */ 
+
 int HashTableBST::hashFunction(int key){
     int index;
     if(hashFunctionSelect) index = hashFunction1(key);
@@ -22,14 +25,18 @@ int HashTableBST::hashFunction(int key){
     return index;
 }
 
-node* HashTableBST::createNode(int key)
+node* HashTableBST::createNode(int key, node* parent)
 {
     node* n = new node;
     n->key = key;
+    n->parent = parent;
     n->left = nullptr;
     n->right = nullptr;
     return n;
 }
+
+
+/* Search Functions */ 
 
 node* HashTableBST::searchBST(node* currNode, int key){
     if(currNode == nullptr) return nullptr;
@@ -56,26 +63,29 @@ node* HashTableBST::searchItem(int key)
     }
 }
 
-// this will either return the new node or nullptr
-node* HashTableBST::insertBST(node* currNode, int key){
+
+/* Insert Functions */ 
+
+node* HashTableBST::insertIntoBST(node* currNode, int key){
+  // this will either return the new node or nullptr
     if(currNode == nullptr) return nullptr; // just in case.
     if(currNode->key == key) {
       std::cout << "found duplicate" << std::endl;
       return nullptr;
     }
     if(currNode->key > key) { // key is smaller. go left. 
-      if(currNode->left) return insertBST(currNode->left, key);
+      if(currNode->left) return insertIntoBST(currNode->left, key);
       else {
         // Create Node Here.
-        node* newNode = createNode(key);
+        node* newNode = createNode(key, currNode);
         currNode->left = newNode;
         return newNode;
       } 
     } else if (currNode->key < key){ // key is larger. go right. 
-      if(currNode->right) return insertBST(currNode->right, key);
+      if(currNode->right) return insertIntoBST(currNode->right, key);
       else {
         // Create Node Here.
-        node* newNode = createNode(key);
+        node* newNode = createNode(key, currNode);
         currNode->right = newNode;
         return newNode;
       }
@@ -84,7 +94,6 @@ node* HashTableBST::insertBST(node* currNode, int key){
     
 }
 
-//function to insert
 bool HashTableBST::insertItem(int key)
 {
   // find bucket.
@@ -92,18 +101,27 @@ bool HashTableBST::insertItem(int key)
   node* bucket = table[index];
 
   if(!bucket){ // if bucket does not exist
-    node* newNode = createNode(key);
+    node* newNode = createNode(key, nullptr);
     table[index] = newNode;
     return true;
   } else { // traverse BST. 
-    node* newNode = insertBST(bucket, key);
+    node* newNode = insertIntoBST(bucket, key);
     if(newNode) return true;
     else return false;
   }
 }
 
+/* Delete Functions */ 
+node* HashTableBST::deleteFromBST(node* currNode, int key){
 
-// function to display hash table
+}
+node* HashTableBST::deleteItem(int key){
+
+
+}
+
+
+/* Print Hash Table */
 void HashTableBST::printTable()
 {
     for (int i = 0; i < tableSize; i++) {
