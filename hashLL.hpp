@@ -5,23 +5,23 @@
 
 using namespace std;
 
-struct node
+struct nodeLL
 {
     int key;
-    struct node* next;
+    struct nodeLL* next;
 };
 
 class HashTableLL
 {
     int tableSize;
 
-    // Pointer to an array containing LL nodes
-    node* *table;
+    // Pointer to an array containing LL nodeLLs
+    nodeLL* *table;
 
     // Int determining which hash function to use
     int hashFunctionSelect;
     
-    node* createNode(int key, node* next);
+    nodeLL* createNode(int key, nodeLL* next);
 public:
     // Constructor
     HashTableLL(int hashFunctSelect);
@@ -36,7 +36,7 @@ public:
     void printTable();
 
     // Searches the hash table for the given key
-    node* searchItem(int key);
+    nodeLL* searchItem(int key);
 
     // Delete the given key from the hash table
     void deleteItem(int key);

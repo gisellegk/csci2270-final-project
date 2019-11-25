@@ -6,11 +6,11 @@
 
 using namespace std;
 
-struct node
+struct nodeBST
 {
     int key;
-    struct node* left;
-    struct node* right;
+    struct nodeBST* left;
+    struct nodeBST* right;
 };
 
 class HashTableBST
@@ -18,30 +18,30 @@ class HashTableBST
     int tableSize;  // No. of buckets (BST)
     int hashFunctionSelect; // which HF to use
     // Pointer to an array containing buckets
-    node* *table;
+    nodeBST* *table;
 
-    node* createNode(int key);
+    nodeBST* createNode(int key);
     int hashFunction(int key);
 
 public:
     HashTableBST(int hashFunctSelect);  // Constructor
     
     // searches for a node
-    node* searchBST(node* currNode, int key);
-    node* searchItem(int key);
+    nodeBST* searchBST(nodeBST* currNode, int key);
+    nodeBST* searchItem(int key);
     
     // inserts a key into hash table
-    node* insertIntoBST(node* currNode, int key);
+    nodeBST* insertIntoBST(nodeBST* currNode, int key);
     bool insertItem(int key);
     
     // delete a node
-    node* getMinValueNode(node* currNode);
-    node* deleteFromBST(node* currNode, int key); // blah
-    node* deleteItem(int key); // TODO
+    nodeBST* getMinValueNode(nodeBST* currNode);
+    nodeBST* deleteFromBST(nodeBST* currNode, int key); // blah
+    nodeBST* deleteItem(int key); // TODO
 
     // print
     void printTable();
-    void printBST(node* n);
+    void printBST(nodeBST* n);
     
     
 };

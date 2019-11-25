@@ -8,7 +8,7 @@ using namespace std;
 HashTableBST::HashTableBST(int hashFunctSelect)
 {
     this->tableSize= TABLE_SIZE;
-    table = new node*[TABLE_SIZE];
+    table = new nodeBST*[TABLE_SIZE];
     for(int i=0;i<TABLE_SIZE;i++)
         table[i] = nullptr;
     
@@ -25,9 +25,9 @@ int HashTableBST::hashFunction(int key){
     return index;
 }
 
-node* HashTableBST::createNode(int key)
+nodeBST* HashTableBST::createNode(int key)
 {
-    node* n = new node;
+    nodeBST* n = new nodeBST;
     n->key = key;
     n->left = nullptr;
     n->right = nullptr;
@@ -37,7 +37,7 @@ node* HashTableBST::createNode(int key)
 
 /* Search Functions */ 
 
-node* HashTableBST::searchBST(node* currNode, int key){
+nodeBST* HashTableBST::searchBST(nodeBST* currNode, int key){
     if(currNode == nullptr) return nullptr;
 
     if(currNode->key == key) return currNode;
@@ -47,7 +47,7 @@ node* HashTableBST::searchBST(node* currNode, int key){
     return searchBST(currNode->right, key);
 }
 
-node* HashTableBST::searchItem(int key)
+nodeBST* HashTableBST::searchItem(int key)
 {
     //Compute the index by using the hash function
     int index = hashFunction(key);
@@ -55,7 +55,7 @@ node* HashTableBST::searchItem(int key)
     if(index < 0) return nullptr;
 
     //Search the BST at that specific index and return the node if found
-    node* n = table[index]; // get bucket
+    nodeBST* n = table[index]; // get bucket
     if(n){
       // if root of tree exists
       n = searchBST(n, key); // search for key where bucket = root.
@@ -65,7 +65,7 @@ node* HashTableBST::searchItem(int key)
 
 /* Insert Functions */ 
 
-node* HashTableBST::insertIntoBST(node* currNode, int key){
+nodeBST* HashTableBST::insertIntoBST(nodeBST* currNode, int key){
   // this will either return the new node or nullptr
     if(currNode == nullptr) return nullptr; // just in case.
     if(currNode->key == key) {
@@ -76,7 +76,7 @@ node* HashTableBST::insertIntoBST(node* currNode, int key){
       if(currNode->left) return insertIntoBST(currNode->left, key);
       else {
         // Create Node Here.
-        node* newNode = createNode(key);
+        nodeBST* newNode = createNode(key);
         currNode->left = newNode;
         return newNode;
       } 
@@ -84,7 +84,7 @@ node* HashTableBST::insertIntoBST(node* currNode, int key){
       if(currNode->right) return insertIntoBST(currNode->right, key);
       else {
         // Create Node Here.
-        node* newNode = createNode(key);
+        nodeBST* newNode = createNode(key);
         currNode->right = newNode;
         return newNode;
       }
@@ -97,34 +97,34 @@ bool HashTableBST::insertItem(int key)
 {
   // find bucket.
   int index = hashFunction(key);
-  node* bucket = table[index];
+  nodeBST* bucket = table[index];
 
   if(!bucket){ // if bucket does not exist
-    node* newNode = createNode(key);
+    nodeBST* newNode = createNode(key);
     table[index] = newNode;
     return true;
   } else { // traverse BST. 
-    node* newNode = insertIntoBST(bucket, key);
+    nodeBST* newNode = insertIntoBST(bucket, key);
     if(newNode) return true;
     else return false;
   }
 }
 
 /* Delete Functions */ 
-node* HashTableBST::getMinValueNode(node* currNode){
+nodeBST* HashTableBST::getMinValueNode(nodeBST* currNode){
     if(currNode->left == NULL){
       return currNode;
     }
     return getMinValueNode(currNode->left);
 }
 
-node* HashTableBST::deleteItem(int key){
+nodeBST* HashTableBST::deleteItem(int key){
   int index = hashFunction(key);
-  node* bucket = table[index];
+  nodeBST* bucket = table[index];
   return deleteFromBST(bucket, key);
 }
 
-node* HashTableBST::deleteFromBST(node *currNode, int value)
+nodeBST* HashTableBST::deleteFromBST(nodeBST *currNode, int value)
 {
   if(currNode == NULL) {
     std::cout << "cannot find node to delete." << std::endl;
@@ -139,18 +139,18 @@ node* HashTableBST::deleteFromBST(node *currNode, int value)
       return NULL;
     }
     else if(currNode->left == NULL) { // only right 
-      node* right = currNode->right;
+      nodeBST* right = currNode->right;
       delete currNode;
       return right;
     }
     else if(currNode->right == NULL) { // only left
-      node* left = currNode->left;
+      nodeBST* left = currNode->left;
       delete currNode;
       return left;
     }
     else { // both l & r
       ///Replace with Minimum from right subtree
-      node* minValueNode = getMinValueNode(currNode->right);
+      nodeBST* minValueNode = getMinValueNode(currNode->right);
       deleteFromBST(currNode, minValueNode->key);
       minValueNode->left = currNode->left;
       minValueNode->right = currNode->right;
@@ -168,7 +168,7 @@ void HashTableBST::printTable()
   std::cout<< "Hash Table with BST:" << std::endl;
     for (int i = 0; i < tableSize; i++) {
         std::cout << i << "|| ";
-        node* n = table[i];
+        nodeBST* n = table[i];
         if(n) {
           // PRINT BST inorder
           printBST(n);
@@ -179,7 +179,7 @@ void HashTableBST::printTable()
     }
  }
 
- void HashTableBST::printBST(node* n){
+ void HashTableBST::printBST(nodeBST* n){
    if(n->left) printBST(n->left);
    std::cout << n->key << " ";
    if(n->right) printBST(n->right);
