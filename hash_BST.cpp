@@ -1,71 +1,72 @@
 // CPP program to implement hashing with chaining
 #include <iostream>
 #include "hash_BST.hpp"
-
+#include "hashFunction.hpp"
 
 using namespace std;
 
-HashTableBST::HashTableBST(int bsize, int funct)
+HashTableBST::HashTableBST(int hashFunctSelect)
 {
-    this->tableSize= bsize;
-    table = new node*[tableSize];
-    for(int i=0;i<bsize;i++)
+    this->tableSize= TABLE_SIZE;
+    table = new node*[TABLE_SIZE];
+    for(int i=0;i<TABLE_SIZE;i++)
         table[i] = nullptr;
+    
+    hashFunctionSelect = hashFunctSelect;
 }
 
-node* HashTableBST::createNode(int key, node* next)
+int HashTableBST::hashFunction(int key){
+    int index;
+    if(hashFunctionSelect) index = hashFunction1(key);
+    else index = hashFunction0(key);
+    return index;
+}
+
+node* HashTableBST::createNode(int key)
 {
-    node* nw = new node;
-    nw->key = key;
-    nw->next = next;
-    return nw;
+    node* n = new node;
+    n->key = key;
+    n->left = nullptr;
+    n->right = nullptr;
+    return n;
 }
 
-// TODO Complete this function
-//function to search
 node* HashTableBST::searchItem(int key)
 {
     //Compute the index by using the hash function
     int index = hashFunction(key);
+
     if(index < 0) return nullptr;
 
-    //TODO: Search the list at that specific index and return the node if found
-    return table[index];
+    //Search the BST at that specific index and return the node if found
+    node* bucket = table[index];
+    if(bucket){
+      // if root of tree exists
+      // TODO: traverse BST.
+    }
 }
 
-//TODO Complete this function
 //function to insert
 bool HashTableBST::insertItem(int key)
 {
-    node* n = searchItem(key);
+    node* n = searchItem(key); // see if the bucket exists
     if(!n)
     {
-        // TODO :
         // Use the hash function on the key to get the index/slot,
         // create a new node with the key and insert it in this slot's list
         int index = hashFunction(key);
-        node* newNode = new node();
-        newNode->key = key;
+        node* newNode = createNode(key);
         table[index] = newNode;
 
      }
-    else{
-      if(n->key == key){
-        cout<<"duplicate entry: "<<key<<endl;
-        return false;
-      } else {
-        node* newNode = new node();
-        newNode->key = key;
-        while(n->next){
-          n = n->next;
-        }
-        n->next = newNode;
-      }
+    else {
+        node* newNode = createNode(key);
+        // TODO: place in BST. 
+      
     }
-
 }
 
-//TODO Complete this function
+
 // function to display hash table
 void HashTableBST::printTable()
 {
@@ -74,14 +75,9 @@ void HashTableBST::printTable()
         node* n = table[i];
         if(n) {
           cout << n->key << " " ;
-          while(n->next){
-            n=n->next;
-            cout << n->key << " " ;
-          }
+          // TODO: PRINT BST
         }
         cout << endl;
-
-        //TODO
     }
 
  }

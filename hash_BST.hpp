@@ -16,16 +16,18 @@ struct node
 class HashTableBST
 {
     int tableSize;  // No. of buckets (BST)
-
+    int hashFunctionSelect; // which HF to use
     // Pointer to an array containing buckets
     node* *table;
 
-    node* createNode(int key, node* next);
+    node* createNode(int key);
 public:
-    HashTableBST(int bsize, int func);  // Constructor
+    HashTableBST(int hashFunctSelect);  // Constructor
 
     // inserts a key into hash table
     bool insertItem(int key);
+
+    int hashFunction(int key);
 
     void printTable();
 
