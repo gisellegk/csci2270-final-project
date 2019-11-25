@@ -1,14 +1,17 @@
 #include <iostream>
 #include <ctime>
+#include <chrono>
 #include <fstream>
 #include <math.h>
 #include "hashLL.hpp"
 #include "hashProbe.hpp"
+#include "hash_BST.hpp"
 #include "hashFunction.hpp"
 
 using namespace std;
 
 int main(int argc, char const *argv[]) {
+    clock_t clockStart;
     int startTime, endTime;
     double execTime;
     ifstream dataFile;
@@ -19,6 +22,10 @@ int main(int argc, char const *argv[]) {
     HashTableLL* llHash0 = new HashTableLL(0);
     cout << "Creating a table with LL collision implemenation and hash function 1" << endl;
     HashTableLL* llHash1 = new HashTableLL(1);
+    cout << "Creating a table with BST collision and hash function 0" << endl;
+    HashTableBST* bstHash0 = new HashTableBST(0);
+    cout << "Creating a table with BST collision and hash function 1" << endl;
+    HashTableBST* bstHash1 = new HashTableBST(1);
     cout << "Creating a table with linear probing and hash function 0" << endl;
     HashTableProbe* probeHash0 = new HashTableProbe(0);
     cout << "Creating a table with linear probing and hash function 1" << endl;
@@ -38,6 +45,8 @@ int main(int argc, char const *argv[]) {
         if (count < maxData1) {
             insertFail = !(llHash0->insertItem(data));
             llHash1->insertItem(data);
+            bstHash0->insertItem(data);
+            bstHash1->insertItem(data);
             probeHash0->insertItem(data);
             probeHash1->insertItem(data);
         } else {
@@ -48,21 +57,49 @@ int main(int argc, char const *argv[]) {
         else count++;
     }
 
-    startTime = clock();
-    /*
-    EVALUATION CODE GOES HERE
-    */
-    endTime = clock();
-    execTime = (double)(endTime-startTime)/CLOCKS_PER_SEC;
-    cout << "execution time: " << execTime << endl;
+    // Insert 100 into llHash0
+    double* ll0InsertTimes = new double[100];
+    for (int i = 0; i < 100; i++ ) {
+        auto startTime = chrono::high_resolution_clock::now();
+        llHash0->insertItem(firstDataSet[i]);
+        auto endTime = std::chrono::high_resolution_clock::now();
+        chrono::duration<double> execTime = endTime-startTime;
+        ll0InsertTimes[i] = execTime.count();
+    }
+    double ll0Sum = 0;
+    for (int i = 0; i < 100; i++ ) {
+        cout << " + " << ll0InsertTimes[i];
+        ll0Sum += ll0InsertTimes[i];
+    }
+    cout << "\nllHash0 average execution time: " << (ll0Sum / 100) << endl;
 
-    cout << "\nPrinting LL Hash Table with Hash Function 0: " << endl;
-    llHash0->printTable();
-    cout << "\nPrinting LL Hash Table with Hash Function 1: " << endl;
-    llHash1->printTable();
-    cout << "\nPrinting Probing Hash Table with Hash Function 0: " << endl;
-    probeHash0->printTable();
-    cout << "\nPrinting Probing Hash Table with Hash Function 1: " << endl;
-    probeHash1->printTable();
+    // Insert 100 into probe0
+    double* probe0InsertTimes = new double[100];
+    for (int i = 0; i < 100; i++ ) {
+        auto startTime = chrono::system_clock::now();
+        probeHash0->insertItem(firstDataSet[i]);
+        auto endTime = std::chrono::system_clock::now();
+        chrono::duration<double> execTime = endTime-startTime;
+        probe0InsertTimes[i] = execTime.count();
+    }
+    double probe0Sum = 0;
+    for (int i = 0; i < 100; i++ ) {
+        cout << " + " << probe0InsertTimes[i];
+        probe0Sum += probe0InsertTimes[i];
+    }
+    cout << "\nprobeHash0 average execution time: " << (probe0Sum / 100) << endl;
+
+    // cout << "\nPrinting LL Hash Table with Hash Function 0: " << endl;
+    // llHash0->printTable();
+    // cout << "\nPrinting LL Hash Table with Hash Function 1: " << endl;
+    // llHash1->printTable();
+    // cout << "\nPrinting BST Hash Table with Hash Function 0:" << endl;
+    // bstHash0->printTable();
+    // cout << "\nPrinting BST Hash Table with Hash Function 1:" << endl;
+    // bstHash1->printTable();
+    // cout << "\nPrinting Probing Hash Table with Hash Function 0: " << endl;
+    // probeHash0->printTable();
+    // cout << "\nPrinting Probing Hash Table with Hash Function 1: " << endl;
+    // probeHash1->printTable();
     return 0;
 }

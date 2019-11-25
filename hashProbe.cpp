@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include "hashFunction.hpp"
 #include "hashProbe.hpp"
 
@@ -62,15 +63,15 @@ unsigned int HashTableProbe::hashFunction(int key) {
 
 // Prints the hash table with spaces for empty elements and 'x' for deleted ones, with 10 elements on a line
 void HashTableProbe::printTable() {
-    int lineCount = 0;
+    int lineCount = 1;
     for (int i = 0; i < TABLE_SIZE; i++) {
-        cout << " " << i << " : ";
-        if (table[i] == EMPTY) cout << " ";
-        else if (table[i] == DELETED) cout << "x";
-        else cout << table[i];
+        cout << " " << setw(6) << i << " : ";
+        if (table[i] == EMPTY) cout << setw(6) << " ";
+        else if (table[i] == DELETED) cout << setw(6) << "x";
+        else cout << setw(6) << table[i];
         cout << " |";
 
-        if (lineCount == 9) {
+        if (lineCount >= 10) {
             cout << endl;
             lineCount = 0;
         }

@@ -1,11 +1,12 @@
 #include <iostream>
+#include <iomanip>
 #include "hashLL.hpp"
 #include "hashFunction.hpp"
 
 using namespace std;
 
-node* HashTableLL::createNode(int key, node* next) {
-    node* nw = new node;
+nodeLL* HashTableLL::createNode(int key, nodeLL* next) {
+    nodeLL* nw = new nodeLL;
     nw->key = key;
     nw->next = next;
     return nw;
@@ -14,18 +15,18 @@ node* HashTableLL::createNode(int key, node* next) {
 HashTableLL::HashTableLL(int hashFunctSelect) {
     this->hashFunctionSelect = hashFunctSelect;
     this->tableSize= TABLE_SIZE;
-    table = new node*[tableSize];
+    table = new nodeLL*[tableSize];
     for(int i=0;i<TABLE_SIZE;i++)
         table[i] = nullptr;
 }
 
 //Searches the hash table for the given key
-node* HashTableLL::searchItem(int key) {
+nodeLL* HashTableLL::searchItem(int key) {
     //Compute the index by using the hash function
     int index = hashFunction(key);
 
-    //Search the list at that specific index and return the node if found
-    node* n = table[index];
+    //Search the list at that specific index and return the nodeLL if found
+    nodeLL* n = table[index];
     while (n != nullptr) {
         if (n->key == key) {
             return n;
@@ -37,13 +38,13 @@ node* HashTableLL::searchItem(int key) {
 //Inserts the given key to the proper place in the hash table
 bool HashTableLL::insertItem(int key) {
     if(!searchItem(key)) {
-        // Use the selected hash function on the key to get the index, then create a LL node with that key
+        // Use the selected hash function on the key to get the index, then create a LL nodeLL with that key
         int index = hashFunction(key);
-        node* newNode = new node();
+        nodeLL* newNode = new nodeLL();
         newNode->key = key;
 
         // Put the new node at the front of the LL in the table
-        node* node = table[index];
+        nodeLL* node = table[index];
         newNode->next = node;
         table[index] = newNode;
         return true;
@@ -63,11 +64,11 @@ unsigned int HashTableLL::hashFunction(int key) {
 // Prints the hash table with each LL being a line, with entries separated by ||
 void HashTableLL::printTable() {
     for (int i = 0; i < tableSize; i++) {
-        cout << i <<"|| ";
+        cout << setw(6) << i <<"|| ";
 
-        node* n = table[i];
+        nodeLL* n = table[i];
         while (n != nullptr) {
-            cout << n->key << " ";
+            cout << setw(6) << n->key << " ";
             n = n->next;
         }
         cout << endl;
@@ -79,13 +80,13 @@ void HashTableLL::printTable() {
     //Compute the index by using the hash function
     int index = hashFunction(key);
 
-    //Search the list at that specific index and delete the node if found
-    node* n = table[index];
-    node* prev = nullptr;
+    //Search the list at that specific index and delete the nodeLL if found
+    nodeLL* n = table[index];
+    nodeLL* prev = nullptr;
     while (n != nullptr) {
         if (n->key == key) {
 
-            // Check if the node is at the start of the LL
+            // Check if the nodeLL is at the start of the LL
             if (prev == nullptr) {
                 table[index] = n->next;
                 delete n;
