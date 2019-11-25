@@ -1,5 +1,6 @@
 #include <iostream>
 #include "hashLL.hpp"
+#include "hashFunction.hpp"
 
 using namespace std;
 
@@ -90,7 +91,7 @@ void HashTableLL::printTable() {
                 delete n;
                 return;
             }
-            
+
             prev->next = n->next;
             delete n;
             return;

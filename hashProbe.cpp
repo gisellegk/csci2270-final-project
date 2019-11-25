@@ -1,4 +1,5 @@
 #include <iostream>
+#include "hashFunction.hpp"
 #include "hashProbe.hpp"
 
 using namespace std;
@@ -30,7 +31,8 @@ bool HashTableProbe::insertItem(int key) {
     }
 
     // If the element at index isn't available we have to do linear probing to find the next available one
-    while (table[index] != EMPTY || table[index] != DELETED) {
+    while (table[index] != EMPTY && table[index] != DELETED) {
+        // cout << "Probing at index: " << index << endl;
         // Check if the key has been entered already
         if (table[index] == key) {
             cout << "duplicate entry: " << key << endl;
@@ -58,7 +60,7 @@ unsigned int HashTableProbe::hashFunction(int key) {
         return hashFunction0(key);
 }
 
-// Prints the hash table with spaces for empty elements and 'x' for deleted ones, with 100 elements on a line
+// Prints the hash table with spaces for empty elements and 'x' for deleted ones, with 10 elements on a line
 void HashTableProbe::printTable() {
     int lineCount = 0;
     for (int i = 0; i < TABLE_SIZE; i++) {
@@ -68,12 +70,13 @@ void HashTableProbe::printTable() {
         else cout << table[i];
         cout << " |";
 
-        if (lineCount == 99) {
+        if (lineCount == 9) {
             cout << endl;
             lineCount = 0;
         }
         lineCount++;
     }
+    cout << endl;
 }
 
 // Searches the hash table for the given key, returns -1 if key not found

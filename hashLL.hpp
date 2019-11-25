@@ -2,7 +2,6 @@
 #define HASHLL_HPP
 
 #include <string>
-#include "hashFunction.hpp"
 
 using namespace std;
 
