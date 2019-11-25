@@ -30,6 +30,9 @@ public:
     // Inserts a key into hash table
     bool insertItem(int key);
 
+    // Function to get the index from the key
+    unsigned int hashFunction(int key);
+
     // Prints the hash table
     void printTable();
 

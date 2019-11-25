@@ -21,9 +21,7 @@ HashTable::HashTable(int hashFunctSelect) {
 //Searches the hash table for the given key
 node* HashTable::searchItem(int key) {
     //Compute the index by using the hash function
-    int index;
-    if (hashFunctionSelect) index = hashFunction1(key);
-    else index = hashFunction0(key);
+    int index = hashFunction(key);
 
     //Search the list at that specific index and return the node if found
     node* n = table[index];
@@ -39,9 +37,7 @@ node* HashTable::searchItem(int key) {
 bool HashTable::insertItem(int key) {
     if(!searchItem(key)) {
         // Use the selected hash function on the key to get the index, then create a LL node with that key
-        int index;
-        if (hashFunctionSelect) index = hashFunction1(key);
-        else index = hashFunction0(key);
+        int index = hashFunction(key);
         node* newNode = new node();
         newNode->key = key;
 
@@ -54,7 +50,13 @@ bool HashTable::insertItem(int key) {
         cout<<"duplicate entry: "<<key<<endl;
         return false;
     }
+}
 
+unsigned int HashTable::hashFunction(int key) {
+    if (hashFunctionSelect)
+        return hashFunction1(key);
+    else
+        return hashFunction0(key);
 }
 
 // Prints the hash table with each LL being a line, with entries separated by ||
