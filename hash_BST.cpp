@@ -25,11 +25,10 @@ int HashTableBST::hashFunction(int key){
     return index;
 }
 
-node* HashTableBST::createNode(int key, node* parent)
+node* HashTableBST::createNode(int key)
 {
     node* n = new node;
     n->key = key;
-    n->parent = parent;
     n->left = nullptr;
     n->right = nullptr;
     return n;
@@ -77,7 +76,7 @@ node* HashTableBST::insertIntoBST(node* currNode, int key){
       if(currNode->left) return insertIntoBST(currNode->left, key);
       else {
         // Create Node Here.
-        node* newNode = createNode(key, currNode);
+        node* newNode = createNode(key);
         currNode->left = newNode;
         return newNode;
       } 
@@ -85,7 +84,7 @@ node* HashTableBST::insertIntoBST(node* currNode, int key){
       if(currNode->right) return insertIntoBST(currNode->right, key);
       else {
         // Create Node Here.
-        node* newNode = createNode(key, currNode);
+        node* newNode = createNode(key);
         currNode->right = newNode;
         return newNode;
       }
@@ -101,7 +100,7 @@ bool HashTableBST::insertItem(int key)
   node* bucket = table[index];
 
   if(!bucket){ // if bucket does not exist
-    node* newNode = createNode(key, nullptr);
+    node* newNode = createNode(key);
     table[index] = newNode;
     return true;
   } else { // traverse BST. 
@@ -112,94 +111,77 @@ bool HashTableBST::insertItem(int key)
 }
 
 /* Delete Functions */ 
-node* HashTableBST::deleteFromBST(node* currNode, int key){
-
-}
-node* HashTableBST::deleteItem(int key){
-
-
-}
-
-
-/* Print Hash Table */
-void HashTableBST::printTable()
-{
-    for (int i = 0; i < tableSize; i++) {
-        cout << i <<"|| ";
-        node* n = table[i];
-        if(n) {
-          cout << n->key << " " ;
-          // TODO: PRINT BST
-        }
-        cout << endl;
-    }
-
- }
-
-Node* BST::getMaxValueNode(Node* currNode){
-    if(currNode->right == NULL){
-        return currNode;
-    }
-    return getMaxValueNode(currNode->right);
-}
-
-Node* BST::getMinValueNode(Node* currNode){
-
+node* HashTableBST::getMinValueNode(node* currNode){
     if(currNode->left == NULL){
       return currNode;
     }
     return getMinValueNode(currNode->left);
 }
 
+node* HashTableBST::deleteItem(int key){
+  int index = hashFunction(key);
+  node* bucket = table[index];
+  return deleteFromBST(bucket, key);
+}
 
-//--------------------------- Delete a Node ------------------------------------------------
-
-// This function deletes the Node with 'value' as it's key. This is to be called inside removeRange() function
-// SILVER TODO Complete the implementation of this function
-Node* BST::deleteNode(Node *currNode, int value)
+node* HashTableBST::deleteFromBST(node *currNode, int value)
 {
-
-  if(currNode == NULL)
-  {
-    return NULL;
+  if(currNode == NULL) {
+    std::cout << "cannot find node to delete." << std::endl;
+    return NULL;  
   }
-  else if(value < currNode->key)
+  else if(value < currNode->key) currNode->left = deleteFromBST(currNode->left, value);
+  else if(value > currNode->key) currNode->right = deleteFromBST(currNode->right, value);
+  else // We found the node with the value
   {
-    currNode->left = deleteNode(currNode->left, value);
-  }
-  else if(value > currNode->key)
-  {
-    currNode->right = deleteNode(currNode->right, value);
-  }
-  // We found the node with the value
-  else
-  {
-    //TODO Case : No child
-    if(currNode->left == NULL && currNode->right == NULL)
-    {
-        return NULL;
+    if(currNode->left == NULL && currNode->right == NULL) { // no child
+      delete currNode;
+      return NULL;
     }
-    //TODO Case : Only right child
-    else if(currNode->left == NULL)
-    {
-        return currNode->right;
+    else if(currNode->left == NULL) { // only right 
+      node* right = currNode->right;
+      delete currNode;
+      return right;
     }
-    //TODO Case : Only left child
-    else if(currNode->right == NULL)
-    {
-        return currNode->left;
+    else if(currNode->right == NULL) { // only left
+      node* left = currNode->left;
+      delete currNode;
+      return left;
     }
-    //TODO Case: Both left and right child
-    else
-    {
+    else { // both l & r
       ///Replace with Minimum from right subtree
-      Node* minValueNode = getMinValueNode(currNode->right);
-      deleteNode(currNode, minValueNode->key);
+      node* minValueNode = getMinValueNode(currNode->right);
+      deleteFromBST(currNode, minValueNode->key);
       minValueNode->left = currNode->left;
       minValueNode->right = currNode->right;
+      delete currNode;
       return minValueNode;
     }
-
   }
-return currNode;
+  return currNode;
 }
+
+
+/* Print Hash Table */
+void HashTableBST::printTable()
+{
+  std::cout<< "Hash Table with BST:" << std::endl;
+    for (int i = 0; i < tableSize; i++) {
+        std::cout << i << "|| ";
+        node* n = table[i];
+        if(n) {
+          // PRINT BST inorder
+          printBST(n);
+        } else {
+          std::cout << " - " << std::endl;
+        }
+        cout << endl;
+    }
+ }
+
+ void HashTableBST::printBST(node* n){
+   if(n->left) printBST(n->left);
+   std::cout << n->key << " ";
+   if(n->right) printBST(n->right);
+
+ }
