@@ -3,14 +3,14 @@
 
 using namespace std;
 
-node* HashTable::createNode(int key, node* next) {
+node* HashTableLL::createNode(int key, node* next) {
     node* nw = new node;
     nw->key = key;
     nw->next = next;
     return nw;
 }
 
-HashTable::HashTable(int hashFunctSelect) {
+HashTableLL::HashTableLL(int hashFunctSelect) {
     this->hashFunctionSelect = hashFunctSelect;
     this->tableSize= TABLE_SIZE;
     table = new node*[tableSize];
@@ -19,7 +19,7 @@ HashTable::HashTable(int hashFunctSelect) {
 }
 
 //Searches the hash table for the given key
-node* HashTable::searchItem(int key) {
+node* HashTableLL::searchItem(int key) {
     //Compute the index by using the hash function
     int index = hashFunction(key);
 
@@ -34,7 +34,7 @@ node* HashTable::searchItem(int key) {
 }
 
 //Inserts the given key to the proper place in the hash table
-bool HashTable::insertItem(int key) {
+bool HashTableLL::insertItem(int key) {
     if(!searchItem(key)) {
         // Use the selected hash function on the key to get the index, then create a LL node with that key
         int index = hashFunction(key);
@@ -52,7 +52,7 @@ bool HashTable::insertItem(int key) {
     }
 }
 
-unsigned int HashTable::hashFunction(int key) {
+unsigned int HashTableLL::hashFunction(int key) {
     if (hashFunctionSelect)
         return hashFunction1(key);
     else
@@ -60,7 +60,7 @@ unsigned int HashTable::hashFunction(int key) {
 }
 
 // Prints the hash table with each LL being a line, with entries separated by ||
-void HashTable::printTable() {
+void HashTableLL::printTable() {
     for (int i = 0; i < tableSize; i++) {
         cout << i <<"|| ";
 
@@ -71,5 +71,31 @@ void HashTable::printTable() {
         }
         cout << endl;
     }
+ }
 
+// Deletes the given key from the hash table
+ void HashTableLL::deleteItem(int key) {
+    //Compute the index by using the hash function
+    int index = hashFunction(key);
+
+    //Search the list at that specific index and delete the node if found
+    node* n = table[index];
+    node* prev = nullptr;
+    while (n != nullptr) {
+        if (n->key == key) {
+
+            // Check if the node is at the start of the LL
+            if (prev == nullptr) {
+                table[index] = n->next;
+                delete n;
+                return;
+            }
+            
+            prev->next = n->next;
+            delete n;
+            return;
+        }
+        prev = n;
+        n = n->next;
+    }
  }

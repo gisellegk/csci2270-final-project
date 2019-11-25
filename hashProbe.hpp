@@ -6,26 +6,22 @@
 
 using namespace std;
 
-struct node
-{
-    int key;
-    struct node* next;
-};
+// Constants for empty/deleted elements in the hash table
+#define DELETED -2
+#define EMPTY -1
 
-class HashTableLL
+class HashTableProbe
 {
     int tableSize;
 
-    // Pointer to an array containing LL nodes
-    node* *table;
+    // An array of integers
+    int* table;
 
     // Int determining which hash function to use
     int hashFunctionSelect;
-    
-    node* createNode(int key, node* next);
 public:
     // Constructor
-    HashTableLL(int hashFunctSelect);
+    HashTableProbe(int hashFunctSelect);
 
     // Inserts a key into hash table
     bool insertItem(int key);
@@ -37,9 +33,9 @@ public:
     void printTable();
 
     // Searches the hash table for the given key
-    node* searchItem(int key);
+    int searchItem(int key);
 
-    // Delete the given key from the hash table
+    // Deletes the given key from the hash table
     void deleteItem(int key);
 };
 
