@@ -1,31 +1,22 @@
-#ifndef HASHLL_HPP
-#define HASHLL_HPP
+#ifndef HASHCUCKOO_HPP
+#define HASHCUCKOO_HPP
 
 #include <string>
 #include "hashFunction.hpp"
 
 using namespace std;
 
-struct node
-{
-    int key;
-    struct node* next;
-};
+#define EMPTY -1
 
-class HashTableLL
+class HashTableCuckoo
 {
     int tableSize;
+    int* table0;
+    int* table1;
 
-    // Pointer to an array containing LL nodes
-    node* *table;
-
-    // Int determining which hash function to use
-    int hashFunctionSelect;
-    
-    node* createNode(int key, node* next);
 public:
     // Constructor
-    HashTableLL(int hashFunctSelect);
+    HashTableCuckoo();
 
     // Inserts a key into hash table
     bool insertItem(int key);
@@ -37,7 +28,7 @@ public:
     void printTable();
 
     // Searches the hash table for the given key
-    node* searchItem(int key);
+    int searchItem(int key);
 
     // Delete the given key from the hash table
     void deleteItem(int key);

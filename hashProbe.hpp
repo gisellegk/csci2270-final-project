@@ -5,10 +5,6 @@
 
 using namespace std;
 
-// Constants for empty/deleted elements in the hash table
-#define DELETED -2
-#define EMPTY -1
-
 class HashTableProbe
 {
     int tableSize;
