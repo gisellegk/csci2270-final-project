@@ -31,6 +31,16 @@ node* HashTableBST::createNode(int key)
     return n;
 }
 
+node* HashTableBST::searchBST(node* currNode, int key){
+    if(currNode == nullptr) return nullptr;
+
+    if(currNode->key == key) return currNode;
+
+    if(currNode->key > key) return searchBST(currNode->left, key);
+
+    return searchBST(currNode->right, key);
+}
+
 node* HashTableBST::searchItem(int key)
 {
     //Compute the index by using the hash function
@@ -39,31 +49,57 @@ node* HashTableBST::searchItem(int key)
     if(index < 0) return nullptr;
 
     //Search the BST at that specific index and return the node if found
-    node* bucket = table[index];
-    if(bucket){
+    node* n = table[index]; // get bucket
+    if(n){
       // if root of tree exists
-      // TODO: traverse BST.
+      n = searchBST(n, key); // search for key where bucket = root.
     }
+}
+
+// this will either return the new node or nullptr
+node* HashTableBST::insertBST(node* currNode, int key){
+    if(currNode == nullptr) return nullptr; // just in case.
+    if(currNode->key == key) {
+      std::cout << "found duplicate" << std::endl;
+      return nullptr;
+    }
+    if(currNode->key > key) { // key is smaller. go left. 
+      if(currNode->left) return insertBST(currNode->left, key);
+      else {
+        // Create Node Here.
+        node* newNode = createNode(key);
+        currNode->left = newNode;
+        return newNode;
+      } 
+    } else if (currNode->key < key){ // key is larger. go right. 
+      if(currNode->right) return insertBST(currNode->right, key);
+      else {
+        // Create Node Here.
+        node* newNode = createNode(key);
+        currNode->right = newNode;
+        return newNode;
+      }
+    }
+    return nullptr;
+    
 }
 
 //function to insert
 bool HashTableBST::insertItem(int key)
 {
-    node* n = searchItem(key); // see if the bucket exists
-    if(!n)
-    {
-        // Use the hash function on the key to get the index/slot,
-        // create a new node with the key and insert it in this slot's list
-        int index = hashFunction(key);
-        node* newNode = createNode(key);
-        table[index] = newNode;
+  // find bucket.
+  int index = hashFunction(key);
+  node* bucket = table[index];
 
-     }
-    else {
-        node* newNode = createNode(key);
-        // TODO: place in BST. 
-      
-    }
+  if(!bucket){ // if bucket does not exist
+    node* newNode = createNode(key);
+    table[index] = newNode;
+    return true;
+  } else { // traverse BST. 
+    node* newNode = insertBST(bucket, key);
+    if(newNode) return true;
+    else return false;
+  }
 }
 
 

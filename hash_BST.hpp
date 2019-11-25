@@ -26,12 +26,15 @@ public:
 
     // inserts a key into hash table
     bool insertItem(int key);
+    node* insertBST(node* currNode, int key);
 
     int hashFunction(int key);
 
     void printTable();
 
     node* searchItem(int key);
+    node* searchBST(node* currNode, int key);
+    node* deleteItem(int key); // TODO
 };
 
 #endif
