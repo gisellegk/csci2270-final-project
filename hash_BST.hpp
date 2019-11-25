@@ -9,7 +9,6 @@ using namespace std;
 struct node
 {
     int key;
-    struct node* parent;
     struct node* left;
     struct node* right;
 };
@@ -21,7 +20,7 @@ class HashTableBST
     // Pointer to an array containing buckets
     node* *table;
 
-    node* createNode(int key, node* parent);
+    node* createNode(int key);
     int hashFunction(int key);
 
 public:
@@ -36,11 +35,13 @@ public:
     bool insertItem(int key);
     
     // delete a node
+    node* getMinValueNode(node* currNode);
     node* deleteFromBST(node* currNode, int key); // blah
     node* deleteItem(int key); // TODO
 
     // print
     void printTable();
+    void printBST(node* n);
     
     
 };
