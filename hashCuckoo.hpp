@@ -23,6 +23,7 @@ class HashTableCuckoo
 public:
     // Constructor
     HashTableCuckoo();
+    HashTableCuckoo(int size);
 
     // Searches the hash table for the given key
     nodeCuckoo* searchItem(int key);

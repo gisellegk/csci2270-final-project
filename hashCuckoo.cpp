@@ -4,6 +4,8 @@
 #include "hashCuckoo.hpp"
 #include "hashFunction.hpp"
 
+#define DEBUG 1
+
 using namespace std;
 
 nodeCuckoo* HashTableCuckoo::createNode(int key, int table){
@@ -19,6 +21,23 @@ HashTableCuckoo::HashTableCuckoo(){
     table0 = new nodeCuckoo*[tableSize];
     table1 = new nodeCuckoo*[tableSize];
     for(int i=0;i<TABLE_SIZE;i++){
+        table0[i] = createNode(EMPTY, 0);
+        table1[i] = createNode(EMPTY, 1);
+    }
+}
+
+HashTableCuckoo::HashTableCuckoo(int size){
+    #ifdef DEBUG
+        std::cout << "make new tables" << std::endl; 
+    #endif
+    this->tableSize= size;
+    std::cout << size << std::endl;
+    this->numRehashes = 0;
+    std::cout << numRehashes << std::endl;
+    table0 = new nodeCuckoo*[tableSize];
+    table1 = new nodeCuckoo*[tableSize];
+    for(int i=0;i<size;i++){
+        std::cout << i << std::endl;
         table0[i] = createNode(EMPTY, 0);
         table1[i] = createNode(EMPTY, 1);
     }
@@ -45,17 +64,21 @@ bool HashTableCuckoo::deleteItem(int key){
 void HashTableCuckoo::printTables(){
     std::cout << "TABLE 0" << std::endl;
     for(int i = 0; i < tableSize; i++) {
-        std::cout << std::setw(6) << i << " | " << std::setw(6) << table0[i] << std::endl;
+        std::cout << std::setw(6) << i << " | " << std::setw(6) << table0[i]->key << std::endl;
     }
     std::cout << "TABLE 1" << std::endl;
     for(int i = 0; i < tableSize; i++) {
-        std::cout << std::setw(6) << i << " | " << std::setw(6) << table1[i] << std::endl;
+        std::cout << std::setw(6) << i << " | " << std::setw(6) << table1[i]->key << std::endl;
     }
 }
 
 bool HashTableCuckoo::insertItem(int key){
+    if(key<0) return true; // no need to insert -1 / empty
     bool insert = insertItemHelper(key);
     while(!insert) {
+        #ifdef DEBUG
+            std::cout << "failed insert. requires rehash" << std::endl; 
+        #endif
         // rehash required. 
         rehash(); // rehash tables
         insert = insertItemHelper(key); // attempt insert again. 
@@ -82,6 +105,9 @@ bool HashTableCuckoo::insertItemHelper(int key){
             nodeCuckoo* newNode = createNode(key, 0);
             table0[index0] = newNode;
             if(!displace(moveMe, newNode)){
+                #ifdef DEBUG
+                    std::cout << "item insert failed." << std::endl; 
+                #endif
                 // needs rehash
                 return false;
             } else return true;
@@ -95,6 +121,9 @@ bool HashTableCuckoo::insertItemHelper(int key){
 
 // returns true if item is successfully placed. Returns false if a loop is detected.
 bool HashTableCuckoo::displace(nodeCuckoo* placeThis, nodeCuckoo* start){
+    #ifdef DEBUG
+         std::cout << "attempt displacement of " << placeThis->key << std::endl; 
+    #endif
     if(placeThis == start) return false;
 
     // make sure to delete the empty node at the end
@@ -136,6 +165,9 @@ bool HashTableCuckoo::displace(nodeCuckoo* placeThis, nodeCuckoo* start){
 }
 
 void HashTableCuckoo::rehash(){
+    #ifdef DEBUG
+        std::cout << "attempt rehash" << std::endl; 
+    #endif
     numRehashes++;
     // increase table size
     int newTableSize = tableSize + 1; // lol idk
@@ -156,8 +188,15 @@ void HashTableCuckoo::rehash(){
     int i = 0;
 
     while(!doneCopyingTables){
+        #ifdef DEBUG
+            std::cout << "  old_table0 value: " << old_table0[i]->key << std::endl; 
+        #endif
         bool tryTable0 = insertItem(old_table0[i]->key);
+        #ifdef DEBUG
+            std::cout << "  old_table1 value: " << old_table1[i]->key << std::endl; 
+        #endif
         bool tryTable1 = insertItem(old_table1[i]->key);
+
         if(!tryTable0 || !tryTable1){ // if there is ever a failed insert, rehash again. 
             // rehash. Again. :(
             newTableSize++;
@@ -177,5 +216,4 @@ void HashTableCuckoo::rehash(){
         }
     }
     tableSize = newTableSize;
-    
 }

@@ -13,5 +13,6 @@ unsigned int hashFunction0(int key, int size) {
 }
 
 unsigned int hashFunction1(int key, int size) {
-    return floor(key / size);
+    int floored = floor(key /size);
+    return floored % size;
 }

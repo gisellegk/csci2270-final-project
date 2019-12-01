@@ -1,3 +1,5 @@
 .vscode/settings.json
 timing
 timing.exe
+*.exe
+*.gch
