@@ -9,7 +9,9 @@
 #define EMPTY -1
 
 unsigned int hashFunction0(int key);
+unsigned int hashFunction0(int key, int size);
 
 unsigned int hashFunction1(int key);
+unsigned int hashFunction1(int key, int size);
 
 #endif

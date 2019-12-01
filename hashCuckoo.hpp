@@ -6,32 +6,39 @@
 
 using namespace std;
 
-#define EMPTY -1
+struct nodeCuckoo
+{
+    int key;
+    int table;
+    int duplicates;
+};
 
 class HashTableCuckoo
 {
     int tableSize;
-    int* table0;
-    int* table1;
+    nodeCuckoo* *table0;
+    nodeCuckoo* *table1;
+    nodeCuckoo* createNode(int key, int table);
 
 public:
     // Constructor
     HashTableCuckoo();
 
-    // Inserts a key into hash table
-    bool insertItem(int key);
-
-    // Function to get the index from the key
-    unsigned int hashFunction(int key);
-
-    // Prints the hash table
-    void printTable();
-
     // Searches the hash table for the given key
-    int searchItem(int key);
+    nodeCuckoo* searchItem(int key);
 
     // Delete the given key from the hash table
-    void deleteItem(int key);
+    bool deleteItem(int key);
+    
+    // Prints the hash tables
+    void printTables();
+
+    // Inserts a key into hash table
+    bool insertItem(int key);
+    bool insertItemHelper(int key);
+    bool displace(nodeCuckoo* placeThis, nodeCuckoo* start);
+    void rehash(); 
+
 };
 
 #endif
