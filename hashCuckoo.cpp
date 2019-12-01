@@ -10,12 +10,12 @@ nodeCuckoo* HashTableCuckoo::createNode(int key, int table){
     nodeCuckoo* n = new nodeCuckoo();
     n->key = key;
     n->table = table;
-    n->duplicates = 0;
     return n;
 }
 
 HashTableCuckoo::HashTableCuckoo(){
     this->tableSize= TABLE_SIZE;
+    this->numRehashes = 0;
     table0 = new nodeCuckoo*[tableSize];
     table1 = new nodeCuckoo*[tableSize];
     for(int i=0;i<TABLE_SIZE;i++){
@@ -38,7 +38,6 @@ bool HashTableCuckoo::deleteItem(int key){
     if(!n) return false; // item not found. Could not delete.
     else {
         n->key = EMPTY;
-        n->duplicates = 0;
         return true;
     }
 }
@@ -88,8 +87,8 @@ bool HashTableCuckoo::insertItemHelper(int key){
             } else return true;
         }
     } else {
-        // this is a duplicate
-        n->duplicates++;
+        // this is a duplicate, ignore it
+        std::cout << "ignoring duplicate of " << key << std::endl;
         return true;
     }
 }
@@ -137,9 +136,46 @@ bool HashTableCuckoo::displace(nodeCuckoo* placeThis, nodeCuckoo* start){
 }
 
 void HashTableCuckoo::rehash(){
+    numRehashes++;
     // increase table size
-    // create 2 new tables
-    // insert each item in old tables into new tables
-    // if there is ever a failed insert, rehash again. 
+    int newTableSize = tableSize + 1; // lol idk
 
+    // save old tables
+    nodeCuckoo* *old_table0 = table0;
+    nodeCuckoo* *old_table1 = table1;
+    
+    // create 2 new tables
+    table0 = new nodeCuckoo*[newTableSize];
+    table1 = new nodeCuckoo*[newTableSize];
+    for(int i=0; i<newTableSize; i++){
+        table0[i] = createNode(EMPTY, 0);
+        table1[i] = createNode(EMPTY, 1);
+    }
+    // insert each item in old tables into new tables
+    bool doneCopyingTables = false; 
+    int i = 0;
+
+    while(!doneCopyingTables){
+        bool tryTable0 = insertItem(old_table0[i]->key);
+        bool tryTable1 = insertItem(old_table1[i]->key);
+        if(!tryTable0 || !tryTable1){ // if there is ever a failed insert, rehash again. 
+            // rehash. Again. :(
+            newTableSize++;
+            numRehashes++; // does this count as an additional rehash? idk i guess so.
+            delete [] table0;
+            delete [] table1;
+            table0 = new nodeCuckoo*[newTableSize];
+            table1 = new nodeCuckoo*[newTableSize];
+            for(int i=0; i<newTableSize; i++){
+                table0[i] = createNode(EMPTY, 0);
+                table1[i] = createNode(EMPTY, 1);
+            }
+            i = 0; 
+        } else {
+            i++;
+            if(i == tableSize) doneCopyingTables = true;
+        }
+    }
+    tableSize = newTableSize;
+    
 }

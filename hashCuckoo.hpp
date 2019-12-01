@@ -10,12 +10,12 @@ struct nodeCuckoo
 {
     int key;
     int table;
-    int duplicates;
 };
 
 class HashTableCuckoo
 {
     int tableSize;
+    int numRehashes; 
     nodeCuckoo* *table0;
     nodeCuckoo* *table1;
     nodeCuckoo* createNode(int key, int table);
