@@ -9,7 +9,7 @@ using namespace std;
 int main(int argc, char const *argv[]) {
     cout << "initiating test" << endl;
     HashTableCuckoo* cuckoo = new HashTableCuckoo(3);
-    cout << "created hash table?" << endl;
+    cout << "created hash table" << endl;
     cuckoo->printTables(); 
     cout << "expected empty table" << endl << endl;
     // items to insert
@@ -37,11 +37,11 @@ int main(int argc, char const *argv[]) {
     cout << "insert key: 12" << endl;
     cuckoo->insertItem(12);
     cuckoo->printTables();
-    cout << "expected rehash." << endl;
+    cout << "expected rehash." << endl << endl;
     // 5 % 4 = 1, floor(5 / 4) = 1 
     cout << "insert key: 5" << endl;
     cuckoo->insertItem(5);
     cuckoo->printTables();
-    cout << "expected displacement without rehashing" << endl;
+    cout << "expected displacement without rehashing" << endl << endl;
     return 0;
 }

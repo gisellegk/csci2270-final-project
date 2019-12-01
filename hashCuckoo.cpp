@@ -4,7 +4,8 @@
 #include "hashCuckoo.hpp"
 #include "hashFunction.hpp"
 
-#define DEBUG 1
+//uncomment this for debug prints
+// #define DEBUG 1
 
 using namespace std;
 
@@ -31,13 +32,13 @@ HashTableCuckoo::HashTableCuckoo(int size){
         std::cout << "make new tables" << std::endl; 
     #endif
     this->tableSize= size;
-    std::cout << size << std::endl;
     this->numRehashes = 0;
-    std::cout << numRehashes << std::endl;
     table0 = new nodeCuckoo*[tableSize];
     table1 = new nodeCuckoo*[tableSize];
     for(int i=0;i<size;i++){
-        std::cout << i << std::endl;
+        #ifdef DEBUG
+            std::cout << i << std::endl;
+        #endif
         table0[i] = createNode(EMPTY, 0);
         table1[i] = createNode(EMPTY, 1);
     }
@@ -106,7 +107,7 @@ bool HashTableCuckoo::insertItemHelper(int key){
             table0[index0] = newNode;
             if(!displace(moveMe, newNode)){
                 #ifdef DEBUG
-                    std::cout << "item insert failed." << std::endl; 
+                    std::cout << "item insert failed, try rehashing." << std::endl; 
                 #endif
                 // needs rehash
                 return false;
