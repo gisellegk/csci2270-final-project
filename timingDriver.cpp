@@ -2,6 +2,7 @@
 #include <chrono>
 #include <fstream>
 #include <math.h>
+#include <ctime>
 #include "hashLL.hpp"
 #include "hashProbe.hpp"
 #include "hash_BST.hpp"
@@ -15,7 +16,7 @@ int main(int argc, char const *argv[]) {
     string fileName = argv[1];
     ifstream inputFile (fileName);
 
-    float loadFactor = 0.9;
+    float loadFactor = .1;
 
     cout << "Creating a table with LL collision implementation and hash function 0" << endl;
     HashTableLL* llHash0 = new HashTableLL(0);
@@ -53,6 +54,8 @@ int main(int argc, char const *argv[]) {
             bstHash1->insertItem(data);
             probeHash0->insertItem(data);
             probeHash1->insertItem(data);
+            // cout << "trying to insert: " << data << endl;
+            // cuckooHash->insertItem(data);
         } else {
             firstDataSet[count-maxData1] = data;
         }
@@ -62,6 +65,8 @@ int main(int argc, char const *argv[]) {
         else count++;
     }
 
+    cout << "loading complete" << endl;
+
     /** =========================================== INSERTIONS =========================================== **/
     // Insert 100 into llHash0
     auto startTime = chrono::high_resolution_clock::now();
@@ -69,8 +74,8 @@ int main(int argc, char const *argv[]) {
         llHash0->insertItem(firstDataSet[i]);
     }
     auto endTime = std::chrono::high_resolution_clock::now();
-    auto execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nllHash0 insert average execution time: " << execTime << " nanoseconds" << endl;
+    auto execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nllHash0 insert average execution time: " << execTime << " microseconds" << endl;
 
     // Insert 100 into llHash1
     startTime = chrono::high_resolution_clock::now();
@@ -78,8 +83,8 @@ int main(int argc, char const *argv[]) {
         llHash1->insertItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nllHash1 insert average execution time: " << execTime << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nllHash1 insert average execution time: " << execTime << " microseconds" << endl;
 
     // Insert 100 into bstHash0
     startTime = chrono::high_resolution_clock::now();
@@ -87,8 +92,8 @@ int main(int argc, char const *argv[]) {
         bstHash0->insertItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nbstHash0 insert average execution time: " << execTime << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nbstHash0 insert average execution time: " << execTime << " microseconds" << endl;
 
     // Insert 100 into bstHash1
     startTime = chrono::high_resolution_clock::now();
@@ -96,8 +101,8 @@ int main(int argc, char const *argv[]) {
         bstHash1->insertItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nbstHash1 insert average execution time: " << execTime << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nbstHash1 insert average execution time: " << execTime << " microseconds" << endl;
 
     // Insert 100 into probe0
     startTime = chrono::high_resolution_clock::now();
@@ -105,8 +110,8 @@ int main(int argc, char const *argv[]) {
         probeHash0->insertItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nprobeHash0 insert average execution time: " << (execTime) << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nprobeHash0 insert average execution time: " << (execTime) << " microseconds" << endl;
 
     // Insert 100 into probe1
     startTime = chrono::high_resolution_clock::now();
@@ -114,17 +119,21 @@ int main(int argc, char const *argv[]) {
         probeHash1->insertItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nprobeHash1 insert average execution time: " << (execTime) << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nprobeHash1 insert average execution time: " << (execTime) << " microseconds" << endl;
 
-    // Insert 100 into cuckooo
-    startTime = chrono::high_resolution_clock::now();
-    for (int i = 0; i < 100; i++ ) {
-        cuckooHash->insertItem(firstDataSet[i]);
-    }
-    endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\ncuckooHash insert average execution time: " << (execTime) << " nanoseconds" << endl;
+    // // Insert 100 into cuckooo
+    // cout << "\nTo get to 'load factor' of " << loadFactor << ", " << cuckooHash->getNumRehashes() << " rehashes were needed" << endl;
+    // startTime = chrono::high_resolution_clock::now();
+    // for (int i = 0; i < 100; i++ ) {
+    //     cuckooHash->insertItem(firstDataSet[i]);
+    // }
+    // endTime = std::chrono::high_resolution_clock::now();
+    // execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    // cout << "cuckooHash insert average execution time: " << (execTime) << " microseconds" << endl;
+    // cout << "cuckooHash required " << cuckooHash->getNumRehashes() << " rehashes" << endl;
+    // cout << "\nPrinting Cuckoo Hash Table: " << endl;
+    // cuckooHash->printTables();
 
     /** =========================================== LOOKUPS =========================================== **/
     // Search 100 in llHash0
@@ -133,8 +142,8 @@ int main(int argc, char const *argv[]) {
         llHash0->searchItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nllHash0 lookup average execution time: " << execTime << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nllHash0 lookup average execution time: " << execTime << " microseconds" << endl;
 
     // Search 100 in llHash1
     startTime = chrono::high_resolution_clock::now();
@@ -142,8 +151,8 @@ int main(int argc, char const *argv[]) {
         llHash1->searchItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nllHash1 lookup average execution time: " << execTime << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nllHash1 lookup average execution time: " << execTime << " microseconds" << endl;
 
     // Search 100 in bstHash0
     startTime = chrono::high_resolution_clock::now();
@@ -151,8 +160,8 @@ int main(int argc, char const *argv[]) {
         bstHash0->searchItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nbstHash0 lookup average execution time: " << execTime << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nbstHash0 lookup average execution time: " << execTime << " microseconds" << endl;
 
     // Search 100 in bstHash1
     startTime = chrono::high_resolution_clock::now();
@@ -160,8 +169,8 @@ int main(int argc, char const *argv[]) {
         bstHash1->searchItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nbstHash1 lookup average execution time: " << execTime << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nbstHash1 lookup average execution time: " << execTime << " microseconds" << endl;
 
     // Search 100 in probe0
     startTime = chrono::high_resolution_clock::now();
@@ -169,8 +178,8 @@ int main(int argc, char const *argv[]) {
         probeHash0->searchItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nprobeHash0 lookup average execution time: " << (execTime) << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nprobeHash0 lookup average execution time: " << (execTime) << " microseconds" << endl;
 
     // Search 100 in probe1
     startTime = chrono::high_resolution_clock::now();
@@ -178,17 +187,17 @@ int main(int argc, char const *argv[]) {
         probeHash1->searchItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nprobeHash1 lookup average execution time: " << (execTime) << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nprobeHash1 lookup average execution time: " << (execTime) << " microseconds" << endl;
 
     // Search 100 in cuckooo
-    startTime = chrono::high_resolution_clock::now();
-    for (int i = 0; i < 100; i++ ) {
-        cuckooHash->searchItem(firstDataSet[i]);
-    }
-    endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\ncuckooHash lookup average execution time: " << (execTime) << " nanoseconds" << endl;
+    // startTime = chrono::high_resolution_clock::now();
+    // for (int i = 0; i < 100; i++ ) {
+    //     cuckooHash->searchItem(firstDataSet[i]);
+    // }
+    // endTime = std::chrono::high_resolution_clock::now();
+    // execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    // cout << "\ncuckooHash lookup average execution time: " << (execTime) << " microseconds" << endl;
 
     /** =========================================== DELETIONS =========================================== **/
     // Delete 100 from llHash0
@@ -197,8 +206,8 @@ int main(int argc, char const *argv[]) {
         llHash0->deleteItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nllHash0 delete average execution time: " << execTime << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nllHash0 delete average execution time: " << execTime << " microseconds" << endl;
 
     // Delete 100 from llHash1
     startTime = chrono::high_resolution_clock::now();
@@ -206,8 +215,8 @@ int main(int argc, char const *argv[]) {
         llHash1->deleteItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nllHash1 delete average execution time: " << execTime << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nllHash1 delete average execution time: " << execTime << " microseconds" << endl;
 
     // Delete 100 from bstHash0
     startTime = chrono::high_resolution_clock::now();
@@ -215,8 +224,8 @@ int main(int argc, char const *argv[]) {
         bstHash0->deleteItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nbstHash0 delete average execution time: " << execTime << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nbstHash0 delete average execution time: " << execTime << " microseconds" << endl;
 
     // Delete 100 from bstHash1
     startTime = chrono::high_resolution_clock::now();
@@ -224,8 +233,8 @@ int main(int argc, char const *argv[]) {
         bstHash1->deleteItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nbstHash1 delete average execution time: " << execTime << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nbstHash1 delete average execution time: " << execTime << " microseconds" << endl;
 
     // Delete 100 from probe0
     startTime = chrono::high_resolution_clock::now();
@@ -233,8 +242,8 @@ int main(int argc, char const *argv[]) {
         probeHash0->deleteItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nprobeHash0 delete average execution time: " << (execTime) << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nprobeHash0 delete average execution time: " << (execTime) << " microseconds" << endl;
 
     // Delete 100 from probe1
     startTime = chrono::high_resolution_clock::now();
@@ -242,17 +251,17 @@ int main(int argc, char const *argv[]) {
         probeHash1->deleteItem(firstDataSet[i]);
     }
     endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\nprobeHash1 delete average execution time: " << (execTime) << " nanoseconds" << endl;
+    execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    cout << "\nprobeHash1 delete average execution time: " << (execTime) << " microseconds" << endl;
 
-    // Delete 100 from cuckooo
-    startTime = chrono::high_resolution_clock::now();
-    for (int i = 0; i < 100; i++ ) {
-        cuckooHash->deleteItem(firstDataSet[i]);
-    }
-    endTime = std::chrono::high_resolution_clock::now();
-    execTime = chrono::duration_cast<std::chrono::nanoseconds> (endTime-startTime).count();
-    cout << "\ncuckooHash delete average execution time: " << (execTime) << " nanoseconds" << endl;
+    // // Delete 100 from cuckooo
+    // startTime = chrono::high_resolution_clock::now();
+    // for (int i = 0; i < 100; i++ ) {
+    //     cuckooHash->deleteItem(firstDataSet[i]);
+    // }
+    // endTime = std::chrono::high_resolution_clock::now();
+    // execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
+    // cout << "\ncuckooHash delete average execution time: " << (execTime) << " microseconds" << endl;
 
     // Printing hash tables for debugging
     // cout << "\nPrinting LL Hash Table with Hash Function 0: " << endl;

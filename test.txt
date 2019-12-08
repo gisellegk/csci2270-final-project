@@ -1,0 +1,3492 @@
+Creating a table with LL collision implementation and hash function 0
+Creating a table with LL collision implemenation and hash function 1
+Creating a table with BST collision and hash function 0
+Creating a table with BST collision and hash function 1
+Creating a table with linear probing and hash function 0
+Creating a table with linear probing and hash function 1
+Creating a table with cuckoo hasing
+Getting a load factor of 0.1
+trying to insert: 22142
+trying to insert: 46166
+trying to insert: 42828
+trying to insert: 24981
+trying to insert: 36617
+trying to insert: 92896
+trying to insert: 99325
+trying to insert: 4196
+trying to insert: 23687
+trying to insert: 87522
+trying to insert: 70823
+trying to insert: 59501
+trying to insert: 3443
+trying to insert: 74336
+trying to insert: 28121
+trying to insert: 31664
+trying to insert: 73235
+trying to insert: 6129
+trying to insert: 81625
+trying to insert: 60701
+trying to insert: 10605
+trying to insert: 77088
+trying to insert: 99598
+trying to insert: 63143
+trying to insert: 50269
+trying to insert: 80315
+trying to insert: 4889
+trying to insert: 71594
+trying to insert: 9593
+trying to insert: 60697
+trying to insert: 44377
+trying to insert: 55990
+trying to insert: 23748
+trying to insert: 27757
+trying to insert: 71937
+trying to insert: 36446
+trying to insert: 19515
+trying to insert: 16727
+trying to insert: 83432
+trying to insert: 71265
+trying to insert: 65423
+trying to insert: 65331
+trying to insert: 67696
+trying to insert: 60356
+trying to insert: 46893
+trying to insert: 69839
+trying to insert: 59933
+trying to insert: 57485
+trying to insert: 80395
+trying to insert: 77922
+trying to insert: 18634
+trying to insert: 45706
+trying to insert: 51116
+trying to insert: 24159
+trying to insert: 99142
+trying to insert: 20044
+trying to insert: 69263
+trying to insert: 16570
+trying to insert: 90856
+trying to insert: 73757
+trying to insert: 31177
+trying to insert: 27212
+trying to insert: 88021
+trying to insert: 43839
+trying to insert: 98154
+trying to insert: 11919
+trying to insert: 47245
+trying to insert: 48674
+trying to insert: 79835
+trying to insert: 94578
+trying to insert: 92111
+trying to insert: 41336
+trying to insert: 76321
+trying to insert: 66965
+trying to insert: 92712
+trying to insert: 20306
+trying to insert: 64576
+trying to insert: 77089
+trying to insert: 44672
+trying to insert: 73733
+trying to insert: 81654
+trying to insert: 88210
+trying to insert: 74068
+trying to insert: 34031
+trying to insert: 97982
+trying to insert: 62793
+trying to insert: 6068
+trying to insert: 79893
+trying to insert: 9125
+trying to insert: 62363
+trying to insert: 9875
+trying to insert: 8207
+trying to insert: 84626
+trying to insert: 52648
+trying to insert: 11388
+trying to insert: 32818
+trying to insert: 57377
+trying to insert: 9808
+trying to insert: 21514
+trying to insert: 66598
+trying to insert: 27094
+trying to insert: 97024
+trying to insert: 34047
+trying to insert: 86167
+trying to insert: 46077
+trying to insert: 6360
+trying to insert: 40105
+trying to insert: 48894
+trying to insert: 5353
+trying to insert: 78445
+trying to insert: 87648
+trying to insert: 67161
+trying to insert: 2613
+trying to insert: 67535
+trying to insert: 55357
+trying to insert: 62882
+trying to insert: 54828
+trying to insert: 18313
+trying to insert: 914
+trying to insert: 5852
+trying to insert: 89401
+trying to insert: 46757
+trying to insert: 15128
+trying to insert: 65020
+trying to insert: 43481
+trying to insert: 38337
+trying to insert: 63034
+trying to insert: 62814
+trying to insert: 42537
+trying to insert: 39125
+trying to insert: 47092
+trying to insert: 73559
+trying to insert: 22741
+trying to insert: 38102
+trying to insert: 86428
+trying to insert: 29108
+trying to insert: 15928
+trying to insert: 25006
+trying to insert: 78969
+trying to insert: 62076
+trying to insert: 73222
+trying to insert: 86698
+trying to insert: 24196
+trying to insert: 10651
+trying to insert: 18227
+trying to insert: 14800
+trying to insert: 81794
+trying to insert: 94246
+trying to insert: 38400
+trying to insert: 80996
+trying to insert: 97693
+trying to insert: 15260
+trying to insert: 43053
+trying to insert: 33462
+trying to insert: 98425
+trying to insert: 84974
+trying to insert: 80240
+trying to insert: 9775
+trying to insert: 14377
+trying to insert: 63501
+trying to insert: 65157
+trying to insert: 20919
+trying to insert: 65947
+trying to insert: 45013
+trying to insert: 6571
+trying to insert: 78448
+trying to insert: 11570
+trying to insert: 6882
+trying to insert: 76760
+trying to insert: 79571
+trying to insert: 35360
+trying to insert: 84938
+trying to insert: 73544
+trying to insert: 13857
+trying to insert: 33202
+trying to insert: 79800
+trying to insert: 76964
+trying to insert: 13316
+trying to insert: 69036
+trying to insert: 32639
+trying to insert: 11702
+trying to insert: 58202
+trying to insert: 92499
+trying to insert: 63057
+trying to insert: 40051
+trying to insert: 21716
+trying to insert: 9773
+trying to insert: 70629
+trying to insert: 11506
+trying to insert: 12336
+trying to insert: 26403
+trying to insert: 82050
+trying to insert: 90587
+trying to insert: 44959
+trying to insert: 84190
+trying to insert: 54351
+trying to insert: 98961
+trying to insert: 35870
+trying to insert: 96114
+trying to insert: 504
+trying to insert: 37130
+trying to insert: 39581
+trying to insert: 69843
+trying to insert: 90447
+trying to insert: 60407
+trying to insert: 27027
+trying to insert: 41028
+trying to insert: 47478
+trying to insert: 26108
+trying to insert: 69496
+trying to insert: 4499
+trying to insert: 32224
+trying to insert: 55525
+trying to insert: 74649
+trying to insert: 46573
+trying to insert: 69499
+trying to insert: 79712
+trying to insert: 33846
+trying to insert: 7587
+trying to insert: 88957
+trying to insert: 93574
+trying to insert: 97456
+trying to insert: 40501
+trying to insert: 5182
+trying to insert: 66756
+trying to insert: 34206
+trying to insert: 66782
+trying to insert: 64615
+trying to insert: 4020
+trying to insert: 55325
+trying to insert: 9272
+trying to insert: 81347
+trying to insert: 52917
+trying to insert: 41635
+trying to insert: 93944
+trying to insert: 18137
+trying to insert: 80195
+trying to insert: 57626
+trying to insert: 80470
+trying to insert: 91949
+trying to insert: 64200
+trying to insert: 68472
+trying to insert: 89826
+trying to insert: 92662
+trying to insert: 10482
+trying to insert: 78071
+trying to insert: 16661
+trying to insert: 2897
+trying to insert: 54399
+trying to insert: 65796
+trying to insert: 28081
+trying to insert: 33048
+trying to insert: 95821
+trying to insert: 3242
+trying to insert: 38785
+trying to insert: 55502
+trying to insert: 74288
+trying to insert: 30022
+trying to insert: 37767
+trying to insert: 11620
+trying to insert: 18806
+trying to insert: 21037
+trying to insert: 50586
+trying to insert: 2773
+trying to insert: 94800
+trying to insert: 16764
+trying to insert: 49437
+trying to insert: 97549
+trying to insert: 79764
+trying to insert: 87402
+trying to insert: 18421
+trying to insert: 24187
+trying to insert: 21332
+trying to insert: 62290
+trying to insert: 13863
+trying to insert: 37816
+trying to insert: 58672
+trying to insert: 84274
+trying to insert: 47476
+trying to insert: 48324
+trying to insert: 65040
+trying to insert: 6665
+trying to insert: 84234
+trying to insert: 22345
+trying to insert: 17725
+trying to insert: 97833
+trying to insert: 84986
+trying to insert: 36994
+trying to insert: 90480
+trying to insert: 45680
+trying to insert: 40180
+trying to insert: 10179
+trying to insert: 82277
+trying to insert: 66285
+trying to insert: 8888
+trying to insert: 45572
+trying to insert: 93509
+trying to insert: 80606
+trying to insert: 66722
+trying to insert: 50408
+trying to insert: 55804
+trying to insert: 37946
+trying to insert: 4723
+trying to insert: 33795
+trying to insert: 79583
+trying to insert: 38043
+trying to insert: 446
+trying to insert: 72539
+trying to insert: 6154
+trying to insert: 66765
+trying to insert: 41793
+trying to insert: 77750
+trying to insert: 33252
+trying to insert: 31892
+trying to insert: 19545
+trying to insert: 250
+trying to insert: 77890
+trying to insert: 27232
+trying to insert: 13646
+trying to insert: 43513
+trying to insert: 11094
+trying to insert: 73956
+trying to insert: 69073
+trying to insert: 68100
+trying to insert: 64827
+trying to insert: 62924
+trying to insert: 58002
+trying to insert: 48376
+trying to insert: 68479
+trying to insert: 21547
+trying to insert: 87672
+trying to insert: 14065
+trying to insert: 32014
+trying to insert: 97413
+trying to insert: 44450
+trying to insert: 49570
+trying to insert: 62993
+trying to insert: 43042
+trying to insert: 35419
+trying to insert: 30812
+trying to insert: 88427
+trying to insert: 27270
+trying to insert: 44931
+trying to insert: 99177
+trying to insert: 91921
+trying to insert: 59899
+trying to insert: 28905
+trying to insert: 822
+trying to insert: 72842
+trying to insert: 91977
+trying to insert: 89603
+trying to insert: 35141
+trying to insert: 28362
+trying to insert: 49079
+trying to insert: 76470
+trying to insert: 90355
+trying to insert: 83406
+trying to insert: 35126
+trying to insert: 87347
+trying to insert: 22652
+trying to insert: 98930
+trying to insert: 83775
+trying to insert: 91354
+trying to insert: 5137
+trying to insert: 87083
+trying to insert: 82193
+trying to insert: 33443
+trying to insert: 88529
+trying to insert: 1958
+trying to insert: 23195
+trying to insert: 45726
+trying to insert: 46999
+trying to insert: 69757
+trying to insert: 75286
+trying to insert: 69771
+trying to insert: 38654
+trying to insert: 41738
+trying to insert: 56979
+trying to insert: 22945
+trying to insert: 74545
+trying to insert: 79175
+trying to insert: 96729
+trying to insert: 1970
+trying to insert: 61988
+trying to insert: 94932
+trying to insert: 18993
+trying to insert: 52273
+trying to insert: 39975
+trying to insert: 9898
+trying to insert: 20565
+trying to insert: 37278
+trying to insert: 55563
+trying to insert: 39038
+trying to insert: 70913
+trying to insert: 62143
+trying to insert: 2795
+trying to insert: 71422
+trying to insert: 53425
+trying to insert: 36740
+trying to insert: 76346
+trying to insert: 88071
+trying to insert: 52853
+trying to insert: 31123
+trying to insert: 70966
+trying to insert: 94157
+trying to insert: 96244
+trying to insert: 79878
+trying to insert: 60567
+trying to insert: 7027
+trying to insert: 33496
+trying to insert: 7933
+trying to insert: 42096
+trying to insert: 77814
+trying to insert: 20215
+trying to insert: 50184
+trying to insert: 89414
+trying to insert: 74517
+trying to insert: 2109
+trying to insert: 52228
+trying to insert: 59350
+trying to insert: 66170
+trying to insert: 74855
+trying to insert: 2249
+trying to insert: 59347
+trying to insert: 94894
+trying to insert: 14530
+trying to insert: 46739
+trying to insert: 89792
+trying to insert: 35217
+trying to insert: 94650
+trying to insert: 99673
+trying to insert: 24873
+trying to insert: 29919
+trying to insert: 70200
+trying to insert: 29848
+trying to insert: 83785
+trying to insert: 72486
+trying to insert: 59362
+trying to insert: 49885
+trying to insert: 45054
+trying to insert: 27690
+trying to insert: 87853
+trying to insert: 12027
+trying to insert: 44465
+trying to insert: 70800
+trying to insert: 81959
+trying to insert: 18037
+trying to insert: 67547
+trying to insert: 74854
+trying to insert: 15470
+trying to insert: 71587
+trying to insert: 94970
+new table size = 10037
+rehash complete
+finished rehashing, table is now 10037
+trying to insert 94970 again
+insert: 1
+trying to insert: 78914
+trying to insert: 22751
+trying to insert: 97637
+trying to insert: 85287
+trying to insert: 49881
+trying to insert: 8239
+trying to insert: 79648
+trying to insert: 48799
+trying to insert: 1173
+trying to insert: 71271
+trying to insert: 84321
+trying to insert: 33139
+trying to insert: 82881
+trying to insert: 94329
+trying to insert: 53267
+trying to insert: 65787
+trying to insert: 57411
+trying to insert: 32602
+trying to insert: 96048
+trying to insert: 17660
+trying to insert: 97012
+trying to insert: 43641
+trying to insert: 46029
+trying to insert: 36519
+trying to insert: 38293
+trying to insert: 31489
+trying to insert: 87892
+trying to insert: 29599
+trying to insert: 4069
+duplicate entry: 38785
+trying to insert: 38785
+trying to insert: 18767
+trying to insert: 73311
+trying to insert: 10663
+trying to insert: 57041
+trying to insert: 76093
+trying to insert: 90269
+trying to insert: 90929
+trying to insert: 34142
+trying to insert: 43583
+trying to insert: 79263
+trying to insert: 9352
+trying to insert: 13807
+trying to insert: 29375
+trying to insert: 72913
+trying to insert: 90233
+trying to insert: 76101
+trying to insert: 93020
+trying to insert: 95482
+trying to insert: 21509
+trying to insert: 53853
+trying to insert: 52028
+trying to insert: 38479
+trying to insert: 63025
+trying to insert: 39164
+trying to insert: 71438
+trying to insert: 79807
+trying to insert: 11758
+trying to insert: 39913
+trying to insert: 25543
+trying to insert: 98222
+trying to insert: 69264
+trying to insert: 12937
+trying to insert: 82596
+trying to insert: 7292
+trying to insert: 36954
+trying to insert: 66433
+trying to insert: 7080
+trying to insert: 82356
+trying to insert: 75282
+trying to insert: 86501
+trying to insert: 62607
+trying to insert: 34038
+trying to insert: 94106
+trying to insert: 97242
+trying to insert: 91545
+trying to insert: 71629
+trying to insert: 58249
+trying to insert: 70289
+trying to insert: 90913
+trying to insert: 33631
+trying to insert: 20881
+trying to insert: 5908
+trying to insert: 76696
+trying to insert: 41427
+trying to insert: 64703
+trying to insert: 17026
+trying to insert: 11305
+trying to insert: 68807
+trying to insert: 2677
+trying to insert: 38040
+trying to insert: 94291
+trying to insert: 89309
+trying to insert: 47392
+trying to insert: 73179
+trying to insert: 84038
+trying to insert: 6375
+trying to insert: 68427
+trying to insert: 89735
+trying to insert: 33423
+trying to insert: 69419
+trying to insert: 90996
+trying to insert: 2624
+trying to insert: 12438
+trying to insert: 41572
+trying to insert: 97239
+trying to insert: 56168
+trying to insert: 92357
+trying to insert: 51105
+trying to insert: 90303
+trying to insert: 99262
+trying to insert: 63259
+trying to insert: 72064
+trying to insert: 56920
+trying to insert: 61692
+trying to insert: 42318
+trying to insert: 49892
+trying to insert: 93440
+trying to insert: 41566
+trying to insert: 66446
+trying to insert: 37564
+trying to insert: 82137
+trying to insert: 31883
+trying to insert: 10403
+trying to insert: 43451
+trying to insert: 40756
+trying to insert: 62729
+trying to insert: 84670
+trying to insert: 39268
+trying to insert: 3221
+trying to insert: 34277
+trying to insert: 78758
+trying to insert: 43033
+trying to insert: 57275
+trying to insert: 82531
+trying to insert: 40581
+trying to insert: 11137
+trying to insert: 41131
+trying to insert: 54295
+trying to insert: 48869
+trying to insert: 49853
+trying to insert: 56227
+trying to insert: 40292
+trying to insert: 95641
+trying to insert: 45921
+trying to insert: 72027
+trying to insert: 19062
+trying to insert: 18378
+trying to insert: 51418
+trying to insert: 67271
+trying to insert: 22561
+trying to insert: 12923
+trying to insert: 34501
+trying to insert: 60607
+trying to insert: 86123
+trying to insert: 51860
+trying to insert: 45692
+trying to insert: 13982
+trying to insert: 6330
+trying to insert: 9395
+trying to insert: 38513
+trying to insert: 56914
+trying to insert: 71868
+trying to insert: 23471
+trying to insert: 41374
+trying to insert: 55495
+trying to insert: 15919
+trying to insert: 11816
+trying to insert: 75698
+trying to insert: 92579
+trying to insert: 42929
+trying to insert: 22354
+trying to insert: 11473
+trying to insert: 61763
+trying to insert: 89276
+trying to insert: 16344
+trying to insert: 47022
+trying to insert: 13798
+trying to insert: 48758
+trying to insert: 44649
+trying to insert: 97286
+trying to insert: 66805
+trying to insert: 93793
+trying to insert: 5087
+trying to insert: 3125
+trying to insert: 64751
+trying to insert: 89992
+trying to insert: 61531
+trying to insert: 8947
+trying to insert: 44350
+trying to insert: 97778
+trying to insert: 20769
+trying to insert: 83768
+trying to insert: 59349
+trying to insert: 32718
+trying to insert: 46522
+trying to insert: 68138
+trying to insert: 89578
+trying to insert: 39034
+trying to insert: 27765
+trying to insert: 8501
+trying to insert: 71483
+trying to insert: 29797
+trying to insert: 33333
+trying to insert: 43435
+trying to insert: 65051
+trying to insert: 75551
+trying to insert: 29266
+trying to insert: 28618
+trying to insert: 73324
+trying to insert: 4985
+trying to insert: 63254
+trying to insert: 70634
+trying to insert: 15350
+trying to insert: 51016
+trying to insert: 39780
+trying to insert: 31767
+trying to insert: 86202
+trying to insert: 10131
+trying to insert: 69367
+trying to insert: 77822
+trying to insert: 78292
+trying to insert: 34423
+trying to insert: 74890
+trying to insert: 91117
+trying to insert: 4866
+trying to insert: 66626
+trying to insert: 92604
+trying to insert: 55497
+trying to insert: 69854
+trying to insert: 76687
+trying to insert: 8738
+trying to insert: 7237
+trying to insert: 24628
+trying to insert: 96249
+trying to insert: 63039
+trying to insert: 57169
+trying to insert: 95899
+trying to insert: 82681
+trying to insert: 24928
+trying to insert: 88289
+trying to insert: 33074
+trying to insert: 40231
+trying to insert: 28210
+trying to insert: 73546
+trying to insert: 21504
+trying to insert: 41266
+trying to insert: 53149
+trying to insert: 39977
+trying to insert: 12449
+trying to insert: 47745
+trying to insert: 2097
+trying to insert: 68959
+trying to insert: 79491
+trying to insert: 63962
+trying to insert: 40081
+trying to insert: 24636
+trying to insert: 70924
+trying to insert: 25639
+trying to insert: 12221
+trying to insert: 45162
+trying to insert: 1519
+trying to insert: 58512
+trying to insert: 75028
+trying to insert: 37927
+trying to insert: 33168
+trying to insert: 43645
+trying to insert: 17193
+trying to insert: 43234
+trying to insert: 31677
+trying to insert: 93330
+trying to insert: 71596
+trying to insert: 15934
+trying to insert: 75115
+trying to insert: 9878
+trying to insert: 84053
+trying to insert: 25546
+trying to insert: 44051
+trying to insert: 88490
+trying to insert: 38027
+trying to insert: 46081
+trying to insert: 65700
+trying to insert: 62269
+trying to insert: 18864
+trying to insert: 5412
+trying to insert: 90822
+trying to insert: 7766
+trying to insert: 4467
+trying to insert: 66279
+trying to insert: 68588
+trying to insert: 27041
+trying to insert: 47895
+trying to insert: 52088
+trying to insert: 76999
+trying to insert: 47877
+trying to insert: 29387
+trying to insert: 96842
+trying to insert: 63707
+trying to insert: 26017
+trying to insert: 54851
+trying to insert: 41664
+trying to insert: 80060
+trying to insert: 99476
+trying to insert: 71748
+trying to insert: 86452
+trying to insert: 89116
+trying to insert: 60197
+trying to insert: 17694
+trying to insert: 77705
+trying to insert: 64770
+trying to insert: 12013
+trying to insert: 14194
+trying to insert: 51410
+trying to insert: 56900
+trying to insert: 34032
+trying to insert: 59956
+trying to insert: 57339
+trying to insert: 1016
+trying to insert: 46963
+trying to insert: 80777
+trying to insert: 74718
+trying to insert: 29338
+trying to insert: 36145
+trying to insert: 88977
+trying to insert: 38051
+trying to insert: 78861
+trying to insert: 97408
+trying to insert: 63845
+trying to insert: 89266
+trying to insert: 47232
+trying to insert: 75715
+trying to insert: 2695
+trying to insert: 76679
+trying to insert: 34612
+trying to insert: 31150
+trying to insert: 29394
+trying to insert: 79734
+trying to insert: 38052
+trying to insert: 32497
+trying to insert: 73770
+trying to insert: 21227
+trying to insert: 14289
+trying to insert: 46594
+trying to insert: 41501
+trying to insert: 85179
+trying to insert: 99502
+trying to insert: 63689
+trying to insert: 79672
+trying to insert: 77547
+trying to insert: 80220
+trying to insert: 83855
+trying to insert: 91686
+trying to insert: 36025
+trying to insert: 43615
+new table size = 10039
+new table size = 10061
+new table size = 10067
+new table size = 10069
+new table size = 10079
+new table size = 10091
+new table size = 10093
+new table size = 10099
+new table size = 10103
+new table size = 10111
+new table size = 10133
+new table size = 10139
+new table size = 10141
+new table size = 10151
+new table size = 10159
+new table size = 10163
+new table size = 10169
+new table size = 10177
+new table size = 10181
+new table size = 10193
+new table size = 10211
+new table size = 10223
+new table size = 10243
+new table size = 10247
+new table size = 10253
+new table size = 10259
+new table size = 10267
+new table size = 10271
+new table size = 10273
+new table size = 10289
+new table size = 10301
+new table size = 10303
+new table size = 10313
+new table size = 10321
+new table size = 10331
+new table size = 10333
+new table size = 10337
+new table size = 10343
+new table size = 10357
+new table size = 10369
+new table size = 10391
+new table size = 10399
+new table size = 10427
+new table size = 10429
+new table size = 10433
+new table size = 10453
+new table size = 10457
+new table size = 10459
+new table size = 10463
+new table size = 10477
+new table size = 10487
+new table size = 10499
+new table size = 10501
+new table size = 10513
+new table size = 10529
+new table size = 10531
+new table size = 10559
+new table size = 10567
+new table size = 10589
+new table size = 10597
+new table size = 10601
+new table size = 10607
+new table size = 10613
+new table size = 10627
+new table size = 10631
+new table size = 10639
+new table size = 10651
+new table size = 10657
+new table size = 10663
+new table size = 10667
+new table size = 10687
+new table size = 10691
+new table size = 10709
+new table size = 10711
+new table size = 10723
+new table size = 10729
+new table size = 10733
+new table size = 10739
+new table size = 10753
+new table size = 10771
+new table size = 10781
+new table size = 10789
+new table size = 10799
+new table size = 10831
+new table size = 10837
+new table size = 10847
+new table size = 10853
+new table size = 10859
+new table size = 10861
+new table size = 10867
+new table size = 10883
+new table size = 10889
+new table size = 10891
+new table size = 10903
+new table size = 10909
+new table size = 10937
+new table size = 10939
+new table size = 10949
+new table size = 10957
+new table size = 10973
+new table size = 10979
+new table size = 10987
+new table size = 10993
+new table size = 11003
+new table size = 11027
+new table size = 11047
+new table size = 11057
+new table size = 11059
+new table size = 11069
+new table size = 11071
+new table size = 11083
+new table size = 11087
+new table size = 11093
+new table size = 11113
+new table size = 11117
+new table size = 11119
+new table size = 11131
+new table size = 11149
+new table size = 11159
+new table size = 11161
+new table size = 11171
+new table size = 11173
+new table size = 11177
+new table size = 11197
+new table size = 11213
+new table size = 11239
+new table size = 11243
+new table size = 11251
+new table size = 11257
+new table size = 11261
+new table size = 11273
+new table size = 11279
+new table size = 11287
+new table size = 11299
+new table size = 11311
+new table size = 11317
+new table size = 11321
+new table size = 11329
+new table size = 11351
+new table size = 11353
+new table size = 11369
+new table size = 11383
+new table size = 11393
+new table size = 11399
+new table size = 11411
+new table size = 11423
+new table size = 11437
+new table size = 11443
+new table size = 11447
+new table size = 11467
+new table size = 11471
+new table size = 11483
+new table size = 11489
+new table size = 11491
+new table size = 11497
+new table size = 11503
+new table size = 11519
+new table size = 11527
+new table size = 11549
+new table size = 11551
+new table size = 11579
+new table size = 11587
+new table size = 11593
+new table size = 11597
+new table size = 11617
+new table size = 11621
+new table size = 11633
+new table size = 11657
+new table size = 11677
+new table size = 11681
+new table size = 11689
+new table size = 11699
+new table size = 11701
+new table size = 11717
+new table size = 11719
+new table size = 11731
+new table size = 11743
+new table size = 11777
+new table size = 11779
+new table size = 11783
+new table size = 11789
+new table size = 11801
+new table size = 11807
+new table size = 11813
+new table size = 11821
+new table size = 11827
+new table size = 11831
+new table size = 11833
+new table size = 11839
+new table size = 11863
+new table size = 11867
+new table size = 11887
+new table size = 11897
+new table size = 11903
+new table size = 11909
+new table size = 11923
+new table size = 11927
+new table size = 11933
+new table size = 11939
+new table size = 11941
+new table size = 11953
+new table size = 11959
+new table size = 11969
+new table size = 11971
+new table size = 11981
+new table size = 11987
+new table size = 12007
+new table size = 12011
+new table size = 12037
+new table size = 12041
+new table size = 12043
+new table size = 12049
+new table size = 12071
+new table size = 12073
+new table size = 12097
+new table size = 12101
+new table size = 12107
+new table size = 12109
+new table size = 12113
+new table size = 12119
+new table size = 12143
+new table size = 12149
+new table size = 12157
+new table size = 12161
+new table size = 12163
+new table size = 12197
+new table size = 12203
+new table size = 12211
+new table size = 12227
+new table size = 12239
+new table size = 12241
+new table size = 12251
+new table size = 12253
+new table size = 12263
+new table size = 12269
+new table size = 12277
+new table size = 12281
+new table size = 12289
+new table size = 12301
+new table size = 12323
+new table size = 12329
+new table size = 12343
+new table size = 12347
+new table size = 12373
+new table size = 12377
+new table size = 12379
+new table size = 12391
+new table size = 12401
+new table size = 12409
+new table size = 12413
+new table size = 12421
+new table size = 12433
+new table size = 12437
+new table size = 12451
+new table size = 12457
+new table size = 12473
+new table size = 12479
+new table size = 12487
+new table size = 12491
+new table size = 12497
+new table size = 12503
+new table size = 12511
+new table size = 12517
+new table size = 12527
+new table size = 12539
+new table size = 12541
+new table size = 12547
+new table size = 12553
+new table size = 12569
+new table size = 12577
+new table size = 12583
+new table size = 12589
+new table size = 12601
+new table size = 12611
+new table size = 12613
+new table size = 12619
+new table size = 12637
+new table size = 12641
+new table size = 12647
+new table size = 12653
+new table size = 12659
+new table size = 12671
+new table size = 12689
+new table size = 12697
+new table size = 12703
+new table size = 12713
+new table size = 12721
+new table size = 12739
+new table size = 12743
+new table size = 12757
+new table size = 12763
+new table size = 12781
+new table size = 12791
+new table size = 12799
+new table size = 12809
+new table size = 12821
+new table size = 12823
+new table size = 12829
+new table size = 12841
+new table size = 12853
+new table size = 12889
+new table size = 12893
+new table size = 12899
+new table size = 12907
+new table size = 12911
+new table size = 12917
+new table size = 12919
+new table size = 12923
+new table size = 12941
+new table size = 12953
+new table size = 12959
+new table size = 12967
+new table size = 12973
+new table size = 12979
+new table size = 12983
+new table size = 13001
+new table size = 13003
+new table size = 13007
+new table size = 13009
+new table size = 13033
+new table size = 13037
+new table size = 13043
+new table size = 13049
+new table size = 13063
+new table size = 13093
+new table size = 13099
+new table size = 13103
+new table size = 13109
+new table size = 13121
+new table size = 13127
+new table size = 13147
+new table size = 13151
+new table size = 13159
+new table size = 13163
+new table size = 13171
+new table size = 13177
+new table size = 13183
+new table size = 13187
+new table size = 13217
+new table size = 13219
+new table size = 13229
+new table size = 13241
+new table size = 13249
+new table size = 13259
+new table size = 13267
+new table size = 13291
+new table size = 13297
+new table size = 13309
+new table size = 13313
+new table size = 13327
+new table size = 13331
+new table size = 13337
+new table size = 13339
+new table size = 13367
+new table size = 13381
+new table size = 13397
+new table size = 13399
+new table size = 13411
+new table size = 13417
+new table size = 13421
+new table size = 13441
+new table size = 13451
+new table size = 13457
+new table size = 13463
+new table size = 13469
+new table size = 13477
+new table size = 13487
+new table size = 13499
+new table size = 13513
+new table size = 13523
+new table size = 13537
+new table size = 13553
+new table size = 13567
+new table size = 13577
+new table size = 13591
+new table size = 13597
+new table size = 13613
+new table size = 13619
+new table size = 13627
+new table size = 13633
+new table size = 13649
+new table size = 13669
+new table size = 13679
+new table size = 13681
+new table size = 13687
+new table size = 13691
+new table size = 13693
+new table size = 13697
+new table size = 13709
+new table size = 13711
+new table size = 13721
+new table size = 13723
+new table size = 13729
+new table size = 13751
+new table size = 13757
+new table size = 13759
+new table size = 13763
+new table size = 13781
+new table size = 13789
+new table size = 13799
+new table size = 13807
+new table size = 13829
+new table size = 13831
+new table size = 13841
+new table size = 13859
+new table size = 13873
+new table size = 13877
+new table size = 13879
+new table size = 13883
+new table size = 13901
+new table size = 13903
+new table size = 13907
+new table size = 13913
+new table size = 13921
+new table size = 13931
+new table size = 13933
+new table size = 13963
+new table size = 13967
+new table size = 13997
+new table size = 13999
+new table size = 14009
+new table size = 14011
+new table size = 14029
+new table size = 14033
+new table size = 14051
+new table size = 14057
+new table size = 14071
+new table size = 14081
+new table size = 14083
+new table size = 14087
+new table size = 14107
+new table size = 14143
+new table size = 14149
+new table size = 14153
+new table size = 14159
+new table size = 14173
+new table size = 14177
+new table size = 14197
+new table size = 14207
+new table size = 14221
+new table size = 14243
+new table size = 14249
+new table size = 14251
+new table size = 14281
+new table size = 14293
+new table size = 14303
+new table size = 14321
+new table size = 14323
+new table size = 14327
+new table size = 14341
+new table size = 14347
+new table size = 14369
+new table size = 14387
+new table size = 14389
+new table size = 14401
+new table size = 14407
+new table size = 14411
+new table size = 14419
+new table size = 14423
+new table size = 14431
+new table size = 14437
+new table size = 14447
+new table size = 14449
+new table size = 14461
+new table size = 14479
+new table size = 14489
+new table size = 14503
+new table size = 14519
+new table size = 14533
+new table size = 14537
+new table size = 14543
+new table size = 14549
+new table size = 14551
+new table size = 14557
+new table size = 14561
+new table size = 14563
+new table size = 14591
+new table size = 14593
+new table size = 14621
+new table size = 14627
+new table size = 14629
+new table size = 14633
+new table size = 14639
+new table size = 14653
+new table size = 14657
+new table size = 14669
+new table size = 14683
+new table size = 14699
+new table size = 14713
+new table size = 14717
+new table size = 14723
+new table size = 14731
+new table size = 14737
+new table size = 14741
+new table size = 14747
+new table size = 14753
+new table size = 14759
+new table size = 14767
+new table size = 14771
+new table size = 14779
+new table size = 14783
+new table size = 14797
+new table size = 14813
+new table size = 14821
+new table size = 14827
+new table size = 14831
+new table size = 14843
+new table size = 14851
+new table size = 14867
+new table size = 14869
+new table size = 14879
+new table size = 14887
+new table size = 14891
+new table size = 14897
+new table size = 14923
+new table size = 14929
+new table size = 14939
+new table size = 14947
+new table size = 14951
+new table size = 14957
+new table size = 14969
+new table size = 14983
+new table size = 15013
+new table size = 15017
+new table size = 15031
+new table size = 15053
+new table size = 15061
+new table size = 15073
+new table size = 15077
+new table size = 15083
+new table size = 15091
+new table size = 15101
+new table size = 15107
+new table size = 15121
+new table size = 15131
+new table size = 15137
+new table size = 15139
+new table size = 15149
+new table size = 15161
+new table size = 15173
+new table size = 15187
+new table size = 15193
+new table size = 15199
+new table size = 15217
+new table size = 15227
+new table size = 15233
+new table size = 15241
+new table size = 15259
+new table size = 15263
+new table size = 15269
+new table size = 15271
+new table size = 15277
+new table size = 15287
+new table size = 15289
+new table size = 15299
+new table size = 15307
+new table size = 15313
+new table size = 15319
+new table size = 15329
+new table size = 15331
+new table size = 15349
+new table size = 15359
+new table size = 15361
+new table size = 15373
+new table size = 15377
+new table size = 15383
+new table size = 15391
+new table size = 15401
+new table size = 15413
+new table size = 15427
+new table size = 15439
+new table size = 15443
+new table size = 15451
+new table size = 15461
+new table size = 15467
+new table size = 15473
+new table size = 15493
+new table size = 15497
+new table size = 15511
+new table size = 15527
+new table size = 15541
+new table size = 15551
+new table size = 15559
+new table size = 15569
+new table size = 15581
+new table size = 15583
+new table size = 15601
+new table size = 15607
+new table size = 15619
+new table size = 15629
+new table size = 15641
+new table size = 15643
+new table size = 15647
+new table size = 15649
+new table size = 15661
+new table size = 15667
+new table size = 15671
+new table size = 15679
+new table size = 15683
+new table size = 15727
+new table size = 15731
+new table size = 15733
+new table size = 15737
+new table size = 15739
+new table size = 15749
+new table size = 15761
+new table size = 15767
+new table size = 15773
+new table size = 15787
+new table size = 15791
+new table size = 15797
+new table size = 15803
+new table size = 15809
+new table size = 15817
+new table size = 15823
+new table size = 15859
+new table size = 15877
+new table size = 15881
+new table size = 15887
+new table size = 15889
+new table size = 15901
+new table size = 15907
+new table size = 15913
+new table size = 15919
+new table size = 15923
+new table size = 15937
+new table size = 15959
+new table size = 15971
+new table size = 15973
+new table size = 15991
+new table size = 16001
+new table size = 16007
+new table size = 16033
+new table size = 16057
+new table size = 16061
+new table size = 16063
+new table size = 16067
+new table size = 16069
+new table size = 16073
+new table size = 16087
+new table size = 16091
+new table size = 16097
+new table size = 16103
+new table size = 16111
+new table size = 16127
+new table size = 16139
+new table size = 16141
+new table size = 16183
+new table size = 16187
+new table size = 16189
+new table size = 16193
+new table size = 16217
+new table size = 16223
+new table size = 16229
+new table size = 16231
+new table size = 16249
+new table size = 16253
+new table size = 16267
+new table size = 16273
+new table size = 16301
+new table size = 16319
+new table size = 16333
+new table size = 16339
+new table size = 16349
+new table size = 16361
+new table size = 16363
+new table size = 16369
+new table size = 16381
+new table size = 16411
+new table size = 16417
+new table size = 16421
+new table size = 16427
+new table size = 16433
+new table size = 16447
+new table size = 16451
+new table size = 16453
+new table size = 16477
+new table size = 16481
+new table size = 16487
+new table size = 16493
+new table size = 16519
+new table size = 16529
+new table size = 16547
+new table size = 16553
+new table size = 16561
+new table size = 16567
+new table size = 16573
+new table size = 16603
+new table size = 16607
+new table size = 16619
+new table size = 16631
+new table size = 16633
+new table size = 16649
+new table size = 16651
+new table size = 16657
+new table size = 16661
+new table size = 16673
+new table size = 16691
+new table size = 16693
+new table size = 16699
+new table size = 16703
+new table size = 16729
+new table size = 16741
+new table size = 16747
+new table size = 16759
+new table size = 16763
+new table size = 16787
+new table size = 16811
+new table size = 16823
+new table size = 16829
+new table size = 16831
+new table size = 16843
+new table size = 16871
+new table size = 16879
+new table size = 16883
+new table size = 16889
+new table size = 16901
+new table size = 16903
+new table size = 16921
+new table size = 16927
+new table size = 16931
+new table size = 16937
+new table size = 16943
+new table size = 16963
+new table size = 16979
+new table size = 16981
+new table size = 16987
+new table size = 16993
+new table size = 17011
+new table size = 17021
+new table size = 17027
+new table size = 17029
+new table size = 17033
+new table size = 17041
+new table size = 17047
+new table size = 17053
+new table size = 17077
+new table size = 17093
+new table size = 17099
+new table size = 17107
+new table size = 17117
+new table size = 17123
+new table size = 17137
+new table size = 17159
+new table size = 17167
+new table size = 17183
+new table size = 17189
+new table size = 17191
+new table size = 17203
+new table size = 17207
+new table size = 17209
+new table size = 17231
+new table size = 17239
+new table size = 17257
+new table size = 17291
+new table size = 17293
+new table size = 17299
+new table size = 17317
+new table size = 17321
+new table size = 17327
+new table size = 17333
+new table size = 17341
+new table size = 17351
+new table size = 17359
+new table size = 17377
+new table size = 17383
+new table size = 17387
+new table size = 17389
+new table size = 17393
+new table size = 17401
+new table size = 17417
+new table size = 17419
+new table size = 17431
+new table size = 17443
+new table size = 17449
+new table size = 17467
+new table size = 17471
+new table size = 17477
+new table size = 17483
+new table size = 17489
+new table size = 17491
+new table size = 17497
+new table size = 17509
+new table size = 17519
+new table size = 17539
+new table size = 17551
+new table size = 17569
+new table size = 17573
+new table size = 17579
+new table size = 17581
+new table size = 17597
+new table size = 17599
+new table size = 17609
+new table size = 17623
+new table size = 17627
+new table size = 17657
+new table size = 17659
+new table size = 17669
+new table size = 17681
+new table size = 17683
+new table size = 17707
+new table size = 17713
+new table size = 17729
+new table size = 17737
+new table size = 17747
+new table size = 17749
+new table size = 17761
+new table size = 17783
+new table size = 17789
+new table size = 17791
+new table size = 17807
+new table size = 17827
+new table size = 17837
+new table size = 17839
+new table size = 17851
+new table size = 17863
+new table size = 17881
+new table size = 17891
+new table size = 17903
+new table size = 17909
+new table size = 17911
+new table size = 17921
+new table size = 17923
+new table size = 17929
+new table size = 17939
+new table size = 17957
+new table size = 17959
+new table size = 17971
+new table size = 17977
+new table size = 17981
+new table size = 17987
+new table size = 17989
+new table size = 18013
+new table size = 18041
+new table size = 18043
+new table size = 18047
+new table size = 18049
+new table size = 18059
+new table size = 18061
+new table size = 18077
+new table size = 18089
+new table size = 18097
+new table size = 18119
+new table size = 18121
+new table size = 18127
+new table size = 18131
+new table size = 18133
+new table size = 18143
+new table size = 18149
+new table size = 18169
+new table size = 18181
+new table size = 18191
+new table size = 18199
+new table size = 18211
+new table size = 18217
+new table size = 18223
+new table size = 18229
+new table size = 18233
+new table size = 18251
+new table size = 18253
+new table size = 18257
+new table size = 18269
+new table size = 18287
+new table size = 18289
+new table size = 18301
+new table size = 18307
+new table size = 18311
+new table size = 18313
+new table size = 18329
+new table size = 18341
+new table size = 18353
+new table size = 18367
+new table size = 18371
+new table size = 18379
+new table size = 18397
+new table size = 18401
+new table size = 18413
+new table size = 18427
+new table size = 18433
+new table size = 18439
+new table size = 18443
+new table size = 18451
+new table size = 18457
+new table size = 18461
+new table size = 18481
+new table size = 18493
+new table size = 18503
+new table size = 18517
+new table size = 18521
+new table size = 18523
+new table size = 18539
+new table size = 18541
+new table size = 18553
+new table size = 18583
+new table size = 18587
+new table size = 18593
+new table size = 18617
+new table size = 18637
+new table size = 18661
+new table size = 18671
+new table size = 18679
+new table size = 18691
+new table size = 18701
+new table size = 18713
+new table size = 18719
+new table size = 18731
+new table size = 18743
+new table size = 18749
+new table size = 18757
+new table size = 18773
+new table size = 18787
+new table size = 18793
+new table size = 18797
+new table size = 18803
+new table size = 18839
+new table size = 18859
+new table size = 18869
+new table size = 18899
+new table size = 18911
+new table size = 18913
+new table size = 18917
+new table size = 18919
+new table size = 18947
+new table size = 18959
+new table size = 18973
+new table size = 18979
+new table size = 19001
+new table size = 19009
+new table size = 19013
+new table size = 19031
+new table size = 19037
+new table size = 19051
+new table size = 19069
+new table size = 19073
+new table size = 19079
+new table size = 19081
+new table size = 19087
+new table size = 19121
+new table size = 19139
+new table size = 19141
+new table size = 19157
+new table size = 19163
+new table size = 19181
+new table size = 19183
+new table size = 19207
+new table size = 19211
+new table size = 19213
+new table size = 19219
+new table size = 19231
+new table size = 19237
+new table size = 19249
+new table size = 19259
+new table size = 19267
+new table size = 19273
+new table size = 19289
+new table size = 19301
+new table size = 19309
+new table size = 19319
+new table size = 19333
+new table size = 19373
+new table size = 19379
+new table size = 19381
+new table size = 19387
+new table size = 19391
+new table size = 19403
+new table size = 19417
+new table size = 19421
+new table size = 19423
+new table size = 19427
+new table size = 19429
+new table size = 19433
+new table size = 19441
+new table size = 19447
+new table size = 19457
+new table size = 19463
+new table size = 19469
+new table size = 19471
+new table size = 19477
+new table size = 19483
+new table size = 19489
+new table size = 19501
+new table size = 19507
+new table size = 19531
+new table size = 19541
+new table size = 19543
+new table size = 19553
+new table size = 19559
+new table size = 19571
+new table size = 19577
+new table size = 19583
+new table size = 19597
+new table size = 19603
+new table size = 19609
+new table size = 19661
+new table size = 19681
+new table size = 19687
+new table size = 19697
+new table size = 19699
+new table size = 19709
+new table size = 19717
+new table size = 19727
+new table size = 19739
+new table size = 19751
+new table size = 19753
+new table size = 19759
+new table size = 19763
+new table size = 19777
+new table size = 19793
+new table size = 19801
+new table size = 19813
+new table size = 19819
+new table size = 19841
+new table size = 19843
+new table size = 19853
+new table size = 19861
+new table size = 19867
+new table size = 19889
+new table size = 19891
+new table size = 19913
+new table size = 19919
+new table size = 19927
+new table size = 19937
+new table size = 19949
+new table size = 19961
+new table size = 19963
+new table size = 19973
+new table size = 19979
+new table size = 19991
+new table size = 19993
+new table size = 19997
+new table size = 20011
+new table size = 20021
+new table size = 20023
+new table size = 20029
+new table size = 20047
+new table size = 20051
+new table size = 20063
+new table size = 20071
+new table size = 20089
+new table size = 20101
+new table size = 20107
+new table size = 20113
+new table size = 20117
+new table size = 20123
+new table size = 20129
+new table size = 20143
+new table size = 20147
+new table size = 20149
+new table size = 20161
+new table size = 20173
+new table size = 20177
+new table size = 20183
+new table size = 20201
+new table size = 20219
+new table size = 20231
+new table size = 20233
+new table size = 20249
+new table size = 20261
+new table size = 20269
+new table size = 20287
+new table size = 20297
+new table size = 20323
+new table size = 20327
+new table size = 20333
+new table size = 20341
+new table size = 20347
+new table size = 20353
+new table size = 20357
+new table size = 20359
+new table size = 20369
+new table size = 20389
+new table size = 20393
+new table size = 20399
+new table size = 20407
+new table size = 20411
+new table size = 20431
+new table size = 20441
+new table size = 20443
+new table size = 20477
+new table size = 20479
+new table size = 20483
+new table size = 20507
+new table size = 20509
+new table size = 20521
+new table size = 20533
+new table size = 20543
+new table size = 20549
+new table size = 20551
+new table size = 20563
+new table size = 20593
+new table size = 20599
+new table size = 20611
+new table size = 20627
+new table size = 20639
+new table size = 20641
+new table size = 20663
+new table size = 20681
+new table size = 20693
+new table size = 20707
+new table size = 20717
+new table size = 20719
+new table size = 20731
+new table size = 20743
+new table size = 20747
+new table size = 20749
+new table size = 20753
+new table size = 20759
+new table size = 20771
+new table size = 20773
+new table size = 20789
+new table size = 20807
+new table size = 20809
+new table size = 20849
+new table size = 20857
+new table size = 20873
+new table size = 20879
+new table size = 20887
+new table size = 20897
+new table size = 20899
+new table size = 20903
+new table size = 20921
+new table size = 20929
+new table size = 20939
+new table size = 20947
+new table size = 20959
+new table size = 20963
+new table size = 20981
+new table size = 20983
+new table size = 21001
+new table size = 21011
+new table size = 21013
+new table size = 21017
+new table size = 21019
+new table size = 21023
+new table size = 21031
+new table size = 21059
+new table size = 21061
+new table size = 21067
+new table size = 21089
+new table size = 21101
+new table size = 21107
+new table size = 21121
+new table size = 21139
+new table size = 21143
+new table size = 21149
+new table size = 21157
+new table size = 21163
+new table size = 21169
+new table size = 21179
+new table size = 21187
+new table size = 21191
+new table size = 21193
+new table size = 21211
+new table size = 21221
+new table size = 21227
+new table size = 21247
+new table size = 21269
+new table size = 21277
+new table size = 21283
+new table size = 21313
+new table size = 21317
+new table size = 21319
+new table size = 21323
+new table size = 21341
+new table size = 21347
+new table size = 21377
+new table size = 21379
+new table size = 21383
+new table size = 21391
+new table size = 21397
+new table size = 21401
+new table size = 21407
+new table size = 21419
+new table size = 21433
+new table size = 21467
+new table size = 21481
+new table size = 21487
+new table size = 21491
+new table size = 21493
+new table size = 21499
+new table size = 21503
+new table size = 21517
+new table size = 21521
+new table size = 21523
+new table size = 21529
+new table size = 21557
+new table size = 21559
+new table size = 21563
+new table size = 21569
+new table size = 21577
+new table size = 21587
+new table size = 21589
+new table size = 21599
+new table size = 21601
+new table size = 21611
+new table size = 21613
+new table size = 21617
+new table size = 21647
+new table size = 21649
+new table size = 21661
+new table size = 21673
+new table size = 21683
+new table size = 21701
+new table size = 21713
+new table size = 21727
+new table size = 21737
+new table size = 21739
+new table size = 21751
+new table size = 21757
+new table size = 21767
+new table size = 21773
+new table size = 21787
+new table size = 21799
+new table size = 21803
+new table size = 21817
+new table size = 21821
+new table size = 21839
+new table size = 21841
+new table size = 21851
+new table size = 21859
+new table size = 21863
+new table size = 21871
+new table size = 21881
+new table size = 21893
+new table size = 21911
+new table size = 21929
+new table size = 21937
+new table size = 21943
+new table size = 21961
+new table size = 21977
+new table size = 21991
+new table size = 21997
+new table size = 22003
+new table size = 22013
+new table size = 22027
+new table size = 22031
+new table size = 22037
+new table size = 22039
+new table size = 22051
+new table size = 22063
+new table size = 22067
+new table size = 22073
+new table size = 22079
+new table size = 22091
+new table size = 22093
+new table size = 22109
+new table size = 22111
+new table size = 22123
+new table size = 22129
+new table size = 22133
+new table size = 22147
+new table size = 22153
+new table size = 22157
+new table size = 22159
+new table size = 22171
+new table size = 22189
+new table size = 22193
+new table size = 22229
+new table size = 22247
+new table size = 22259
+new table size = 22271
+new table size = 22273
+new table size = 22277
+new table size = 22279
+new table size = 22283
+new table size = 22291
+new table size = 22303
+new table size = 22307
+new table size = 22343
+new table size = 22349
+new table size = 22367
+new table size = 22369
+new table size = 22381
+new table size = 22391
+new table size = 22397
+new table size = 22409
+new table size = 22433
+new table size = 22441
+new table size = 22447
+new table size = 22453
+new table size = 22469
+new table size = 22481
+new table size = 22483
+new table size = 22501
+new table size = 22511
+new table size = 22531
+new table size = 22541
+new table size = 22543
+new table size = 22549
+new table size = 22567
+new table size = 22571
+new table size = 22573
+new table size = 22613
+new table size = 22619
+new table size = 22621
+new table size = 22637
+new table size = 22639
+new table size = 22643
+new table size = 22651
+new table size = 22669
+new table size = 22679
+new table size = 22691
+new table size = 22697
+new table size = 22699
+new table size = 22709
+new table size = 22717
+new table size = 22721
+new table size = 22727
+new table size = 22739
+new table size = 22741
+new table size = 22751
+new table size = 22769
+new table size = 22777
+new table size = 22783
+new table size = 22787
+new table size = 22807
+new table size = 22811
+new table size = 22817
+new table size = 22853
+new table size = 22859
+new table size = 22861
+new table size = 22871
+new table size = 22877
+new table size = 22901
+new table size = 22907
+new table size = 22921
+new table size = 22937
+new table size = 22943
+new table size = 22961
+new table size = 22963
+new table size = 22973
+new table size = 22993
+new table size = 23003
+new table size = 23011
+new table size = 23017
+new table size = 23021
+new table size = 23027
+new table size = 23029
+new table size = 23039
+new table size = 23041
+new table size = 23053
+new table size = 23057
+new table size = 23059
+new table size = 23063
+new table size = 23071
+new table size = 23081
+new table size = 23087
+new table size = 23099
+new table size = 23117
+new table size = 23131
+new table size = 23143
+new table size = 23159
+new table size = 23167
+new table size = 23173
+new table size = 23189
+new table size = 23197
+new table size = 23201
+new table size = 23203
+new table size = 23209
+new table size = 23227
+new table size = 23251
+new table size = 23269
+new table size = 23279
+new table size = 23291
+new table size = 23293
+new table size = 23297
+new table size = 23311
+new table size = 23321
+new table size = 23327
+new table size = 23333
+new table size = 23339
+new table size = 23357
+new table size = 23369
+new table size = 23371
+new table size = 23399
+new table size = 23417
+new table size = 23431
+new table size = 23447
+new table size = 23459
+new table size = 23473
+new table size = 23497
+new table size = 23509
+new table size = 23531
+new table size = 23537
+new table size = 23539
+new table size = 23549
+new table size = 23557
+new table size = 23561
+new table size = 23563
+new table size = 23567
+new table size = 23581
+new table size = 23593
+new table size = 23599
+new table size = 23603
+new table size = 23609
+new table size = 23623
+new table size = 23627
+new table size = 23629
+new table size = 23633
+new table size = 23663
+new table size = 23669
+new table size = 23671
+new table size = 23677
+new table size = 23687
+new table size = 23689
+new table size = 23719
+new table size = 23741
+new table size = 23743
+new table size = 23747
+new table size = 23753
+new table size = 23761
+new table size = 23767
+new table size = 23773
+new table size = 23789
+new table size = 23801
+new table size = 23813
+new table size = 23819
+new table size = 23827
+new table size = 23831
+new table size = 23833
+new table size = 23857
+new table size = 23869
+new table size = 23873
+new table size = 23879
+new table size = 23887
+new table size = 23893
+new table size = 23899
+new table size = 23909
+new table size = 23911
+new table size = 23917
+new table size = 23929
+new table size = 23957
+new table size = 23971
+new table size = 23977
+new table size = 23981
+new table size = 23993
+new table size = 24001
+new table size = 24007
+new table size = 24019
+new table size = 24023
+new table size = 24029
+new table size = 24043
+new table size = 24049
+new table size = 24061
+new table size = 24071
+new table size = 24077
+new table size = 24083
+new table size = 24091
+new table size = 24097
+new table size = 24103
+new table size = 24107
+new table size = 24109
+new table size = 24113
+new table size = 24121
+new table size = 24133
+new table size = 24137
+new table size = 24151
+new table size = 24169
+new table size = 24179
+new table size = 24181
+new table size = 24197
+new table size = 24203
+new table size = 24223
+new table size = 24229
+new table size = 24239
+new table size = 24247
+new table size = 24251
+new table size = 24281
+new table size = 24317
+new table size = 24329
+new table size = 24337
+new table size = 24359
+new table size = 24371
+new table size = 24373
+new table size = 24379
+new table size = 24391
+new table size = 24407
+new table size = 24413
+new table size = 24419
+new table size = 24421
+new table size = 24439
+new table size = 24443
+new table size = 24469
+new table size = 24473
+new table size = 24481
+new table size = 24499
+new table size = 24509
+new table size = 24517
+new table size = 24527
+new table size = 24533
+new table size = 24547
+new table size = 24551
+new table size = 24571
+new table size = 24593
+new table size = 24611
+new table size = 24623
+new table size = 24631
+new table size = 24659
+new table size = 24671
+new table size = 24677
+new table size = 24683
+new table size = 24691
+new table size = 24697
+new table size = 24709
+new table size = 24733
+new table size = 24749
+new table size = 24763
+new table size = 24767
+new table size = 24781
+new table size = 24793
+new table size = 24799
+new table size = 24809
+new table size = 24821
+new table size = 24841
+new table size = 24847
+new table size = 24851
+new table size = 24859
+new table size = 24877
+new table size = 24889
+new table size = 24907
+new table size = 24917
+new table size = 24919
+new table size = 24923
+new table size = 24943
+new table size = 24953
+new table size = 24967
+new table size = 24971
+new table size = 24977
+new table size = 24979
+new table size = 24989
+new table size = 25013
+new table size = 25031
+new table size = 25033
+new table size = 25037
+new table size = 25057
+new table size = 25073
+new table size = 25087
+new table size = 25097
+new table size = 25111
+new table size = 25117
+new table size = 25121
+new table size = 25127
+new table size = 25147
+new table size = 25153
+new table size = 25163
+new table size = 25169
+new table size = 25171
+new table size = 25183
+new table size = 25189
+new table size = 25219
+new table size = 25229
+new table size = 25237
+new table size = 25243
+new table size = 25247
+new table size = 25253
+new table size = 25261
+new table size = 25301
+new table size = 25303
+new table size = 25307
+new table size = 25309
+new table size = 25321
+new table size = 25339
+new table size = 25343
+new table size = 25349
+new table size = 25357
+new table size = 25367
+new table size = 25373
+new table size = 25391
+new table size = 25409
+new table size = 25411
+new table size = 25423
+new table size = 25439
+new table size = 25447
+new table size = 25453
+new table size = 25457
+new table size = 25463
+new table size = 25469
+new table size = 25471
+new table size = 25523
+new table size = 25537
+new table size = 25541
+new table size = 25561
+new table size = 25577
+new table size = 25579
+new table size = 25583
+new table size = 25589
+new table size = 25601
+new table size = 25603
+new table size = 25609
+new table size = 25621
+new table size = 25633
+new table size = 25639
+new table size = 25643
+new table size = 25657
+new table size = 25667
+new table size = 25673
+new table size = 25679
+new table size = 25693
+new table size = 25703
+new table size = 25717
+new table size = 25733
+new table size = 25741
+new table size = 25747
+new table size = 25759
+new table size = 25763
+new table size = 25771
+new table size = 25793
+new table size = 25799
+new table size = 25801
+new table size = 25819
+new table size = 25841
+new table size = 25847
+new table size = 25849
+new table size = 25867
+new table size = 25873
+new table size = 25889
+new table size = 25903
+new table size = 25913
+new table size = 25919
+new table size = 25931
+new table size = 25933
+new table size = 25939
+new table size = 25943
+new table size = 25951
+new table size = 25969
+new table size = 25981
+new table size = 25997
+new table size = 25999
+new table size = 26003
+new table size = 26017
+new table size = 26021
+new table size = 26029
+new table size = 26041
+new table size = 26053
+new table size = 26083
+new table size = 26099
+new table size = 26107
+new table size = 26111
+new table size = 26113
+new table size = 26119
+new table size = 26141
+new table size = 26153
+new table size = 26161
+new table size = 26171
+new table size = 26177
+new table size = 26183
+new table size = 26189
+new table size = 26203
+new table size = 26209
+new table size = 26227
+new table size = 26237
+new table size = 26249
+new table size = 26251
+new table size = 26261
+new table size = 26263
+new table size = 26267
+new table size = 26293
+new table size = 26297
+new table size = 26309
+new table size = 26317
+new table size = 26321
+new table size = 26339
+new table size = 26347
+new table size = 26357
+new table size = 26371
+new table size = 26387
+new table size = 26393
+new table size = 26399
+new table size = 26407
+new table size = 26417
+new table size = 26423
+new table size = 26431
+new table size = 26437
+new table size = 26449
+new table size = 26459
+new table size = 26479
+new table size = 26489
+new table size = 26497
+new table size = 26501
+new table size = 26513
+new table size = 26539
+new table size = 26557
+new table size = 26561
+new table size = 26573
+new table size = 26591
+new table size = 26597
+new table size = 26627
+new table size = 26633
+new table size = 26641
+new table size = 26647
+new table size = 26669
+new table size = 26681
+new table size = 26683
+new table size = 26687
+new table size = 26693
+new table size = 26699
+new table size = 26701
+new table size = 26711
+new table size = 26713
+new table size = 26717
+new table size = 26723
+new table size = 26729
+new table size = 26731
+new table size = 26737
+new table size = 26759
+new table size = 26777
+new table size = 26783
+new table size = 26801
+new table size = 26813
+new table size = 26821
+new table size = 26833
+new table size = 26839
+new table size = 26849
+new table size = 26861
+new table size = 26863
+new table size = 26879
+new table size = 26881
+new table size = 26891
+new table size = 26893
+new table size = 26903
+new table size = 26921
+new table size = 26927
+new table size = 26947
+new table size = 26951
+new table size = 26953
+new table size = 26959
+new table size = 26981
+new table size = 26987
+new table size = 26993
+new table size = 27011
+new table size = 27017
+new table size = 27031
+new table size = 27043
+new table size = 27059
+new table size = 27061
+new table size = 27067
+new table size = 27073
+new table size = 27077
+new table size = 27091
+new table size = 27103
+new table size = 27107
+new table size = 27109
+new table size = 27127
+new table size = 27143
+new table size = 27179
+new table size = 27191
+new table size = 27197
+new table size = 27211
+new table size = 27239
+new table size = 27241
+new table size = 27253
+new table size = 27259
+new table size = 27271
+new table size = 27277
+new table size = 27281
+new table size = 27283
+new table size = 27299
+new table size = 27329
+new table size = 27337
+new table size = 27361
+new table size = 27367
+new table size = 27397
+new table size = 27407
+new table size = 27409
+new table size = 27427
+new table size = 27431
+new table size = 27437
+new table size = 27449
+new table size = 27457
+new table size = 27479
+new table size = 27481
+new table size = 27487
+new table size = 27509
+new table size = 27527
+new table size = 27529
+new table size = 27539
+new table size = 27541
+new table size = 27551
+new table size = 27581
+new table size = 27583
+new table size = 27611
+new table size = 27617
+new table size = 27631
+new table size = 27647
+new table size = 27653
+new table size = 27673
+new table size = 27689
+new table size = 27691
+new table size = 27697
+new table size = 27701
+new table size = 27733
+new table size = 27737
+new table size = 27739
+new table size = 27743
+new table size = 27749
+new table size = 27751
+new table size = 27763
+new table size = 27767
+new table size = 27773
+new table size = 27779
+new table size = 27791
+new table size = 27793
+new table size = 27799
+new table size = 27803
+new table size = 27809
+new table size = 27817
+new table size = 27823
+new table size = 27827
+new table size = 27847
+new table size = 27851
+new table size = 27883
+new table size = 27893
+new table size = 27901
+new table size = 27917
+new table size = 27919
+new table size = 27941
+new table size = 27943
+new table size = 27947
+new table size = 27953
+new table size = 27961
+new table size = 27967
+new table size = 27983
+new table size = 27997
+new table size = 28001
+new table size = 28019
+new table size = 28027
+new table size = 28031
+new table size = 28051
+new table size = 28057
+new table size = 28069
+new table size = 28081
+new table size = 28087
+new table size = 28097
+new table size = 28099
+new table size = 28109
+new table size = 28111
+new table size = 28123
+new table size = 28151
+new table size = 28163
+new table size = 28181
+new table size = 28183
+new table size = 28201
+new table size = 28211
+new table size = 28219
+new table size = 28229
+new table size = 28277
+new table size = 28279
+new table size = 28283
+new table size = 28289
+new table size = 28297
+new table size = 28307
+new table size = 28309
+new table size = 28319
+new table size = 28349
+new table size = 28351
+new table size = 28387
+new table size = 28393
+new table size = 28403
+new table size = 28409
+new table size = 28411
+new table size = 28429
+new table size = 28433
+new table size = 28439
+new table size = 28447
+new table size = 28463
+new table size = 28477
+new table size = 28493
+new table size = 28499
+new table size = 28513
+new table size = 28517
+new table size = 28537
+new table size = 28541
+new table size = 28547
+new table size = 28549
+new table size = 28559
+new table size = 28571
+new table size = 28573
+new table size = 28579
+new table size = 28591
+new table size = 28597
+new table size = 28603
+new table size = 28607
+new table size = 28619
+new table size = 28621
+new table size = 28627
+new table size = 28631
+new table size = 28643
+new table size = 28649
+new table size = 28657
+new table size = 28661
+new table size = 28663
+new table size = 28669
+new table size = 28687
+new table size = 28697
+new table size = 28703
+new table size = 28711
+new table size = 28723
+new table size = 28729
+new table size = 28751
+new table size = 28753
+new table size = 28759
+new table size = 28771
+new table size = 28789
+new table size = 28793
+new table size = 28807
+new table size = 28813
+new table size = 28817
+new table size = 28837
+new table size = 28843
+new table size = 28859
+new table size = 28867
+new table size = 28871
+new table size = 28879
+new table size = 28901
+new table size = 28909
+new table size = 28921
+new table size = 28927
+new table size = 28933
+new table size = 28949
+new table size = 28961
+new table size = 28979
+new table size = 29009
+new table size = 29017
+new table size = 29021
+new table size = 29023
+new table size = 29027
+new table size = 29033
+new table size = 29059
+new table size = 29063
+new table size = 29077
+new table size = 29101
+new table size = 29123
+new table size = 29129
+new table size = 29131
+new table size = 29137
+new table size = 29147
+new table size = 29153
+new table size = 29167
+new table size = 29173
+new table size = 29179
+new table size = 29191
+new table size = 29201
+new table size = 29207
+new table size = 29209
+new table size = 29221
+new table size = 29231
+new table size = 29243
+new table size = 29251
+new table size = 29269
+new table size = 29287
+new table size = 29297
+new table size = 29303
+new table size = 29311
+new table size = 29327
+new table size = 29333
+new table size = 29339
+new table size = 29347
+new table size = 29363
+new table size = 29383
+new table size = 29387
+new table size = 29389
+new table size = 29399
+new table size = 29401
+new table size = 29411
+new table size = 29423
+new table size = 29429
+new table size = 29437
+new table size = 29443
+new table size = 29453
+new table size = 29473
+new table size = 29483
+new table size = 29501
+new table size = 29527
+new table size = 29531
+new table size = 29537
+new table size = 29567
+new table size = 29569
+new table size = 29573
+new table size = 29581
+new table size = 29587
+new table size = 29599
+new table size = 29611
+new table size = 29629
+new table size = 29633
+new table size = 29641
+new table size = 29663
+new table size = 29669
+new table size = 29671
+new table size = 29683
+new table size = 29717
+new table size = 29723
+new table size = 29741
+new table size = 29753
+new table size = 29759
+new table size = 29761
+new table size = 29789
+new table size = 29803
+new table size = 29819
+new table size = 29833
+new table size = 29837
+new table size = 29851
+new table size = 29863
+new table size = 29867
+new table size = 29873
+new table size = 29879
+new table size = 29881
+new table size = 29917
+new table size = 29921
+new table size = 29927
+new table size = 29947
+new table size = 29959
+new table size = 29983
+new table size = 29989
+new table size = 30011
+new table size = 30013
+new table size = 30029
+new table size = 30047
+new table size = 30059
+new table size = 30071
+new table size = 30089
+new table size = 30091
+new table size = 30097
+new table size = 30103
+new table size = 30109
+new table size = 30113
+new table size = 30119
+new table size = 30133
+new table size = 30137
+new table size = 30139
+new table size = 30161
+new table size = 30169
+new table size = 30181
+new table size = 30187
+new table size = 30197
+new table size = 30203
+new table size = 30211
+new table size = 30223
+new table size = 30241
+new table size = 30253
+new table size = 30259
+new table size = 30269
+new table size = 30271
+new table size = 30293
+new table size = 30307
+new table size = 30313
+new table size = 30319
+new table size = 30323
+new table size = 30341
+new table size = 30347
+new table size = 30367
+new table size = 30389
+new table size = 30391
+new table size = 30403
+new table size = 30427
+new table size = 30431
+new table size = 30449
+new table size = 30467
+new table size = 30469
+new table size = 30491
+new table size = 30493
+new table size = 30497
+new table size = 30509
+new table size = 30517
+new table size = 30529
+new table size = 30539
+new table size = 30553
+new table size = 30557
+new table size = 30559
+new table size = 30577
+new table size = 30593
+new table size = 30631
+new table size = 30637
+new table size = 30643
+new table size = 30649
+new table size = 30661
+new table size = 30671
+new table size = 30677
+new table size = 30689
+new table size = 30697
+new table size = 30703
+new table size = 30707
+new table size = 30713
+new table size = 30727
+new table size = 30757
+new table size = 30763
+new table size = 30773
+new table size = 30781
+new table size = 30803
+new table size = 30809
+new table size = 30817
+new table size = 30829
+new table size = 30839
+new table size = 30841
+new table size = 30851
+new table size = 30853
+new table size = 30859
+new table size = 30869
+new table size = 30871
+new table size = 30881
+new table size = 30893
+new table size = 30911
+new table size = 30931
+new table size = 30937
+new table size = 30941
+new table size = 30949
+new table size = 30971
+new table size = 30977
+new table size = 30983
+new table size = 31013
+new table size = 31019
+new table size = 31033
+new table size = 31039
+new table size = 31051
+new table size = 31063
+new table size = 31069
+new table size = 31079
+new table size = 31081
+new table size = 31091
+new table size = 31121
+new table size = 31123
+new table size = 31139
+new table size = 31147
+new table size = 31151
+new table size = 31153
+new table size = 31159
+new table size = 31177
+new table size = 31181
+new table size = 31183
+new table size = 31189
+new table size = 31193
+new table size = 31219
+new table size = 31223
+new table size = 31231
+new table size = 31237
+new table size = 31247
+new table size = 31249
+new table size = 31253
+new table size = 31259
+new table size = 31267
+new table size = 31271
+new table size = 31277
+new table size = 31307
+new table size = 31319
+new table size = 31321
+new table size = 31327
+new table size = 31333
+new table size = 31337
+new table size = 31357
+new table size = 31379
+new table size = 31387
+new table size = 31391
+new table size = 31393
+new table size = 31397
+new table size = 31469
+new table size = 31477
+new table size = 31481
+new table size = 31489
+new table size = 31511
+new table size = 31513
+new table size = 31517
+new table size = 31531
+new table size = 31541
+new table size = 31543
+new table size = 31547
+new table size = 31567
+new table size = 31573
+new table size = 31583
+new table size = 31601
+new table size = 31607
+new table size = 31627
+new table size = 31643
+new table size = 31649
+new table size = 31657
+new table size = 31663
+new table size = 31667
+new table size = 31687
+new table size = 31699
+new table size = 31721
+new table size = 31723
+new table size = 31727
+new table size = 31729
+new table size = 31741
+new table size = 31751
+new table size = 31769
+new table size = 31771
+new table size = 31793
+new table size = 31799
+new table size = 31817
+new table size = 31847
+new table size = 31849
+new table size = 31859
+new table size = 31873
+new table size = 31883
+new table size = 31891
+new table size = 31907
+new table size = 31957
+new table size = 31963
+new table size = 31973
+new table size = 31981
+new table size = 31991
+new table size = 32003
+new table size = 32009
+new table size = 32027
+new table size = 32029
+new table size = 32051
+new table size = 32057
+new table size = 32059
+new table size = 32063
+new table size = 32069
+new table size = 32077
+new table size = 32083
+new table size = 32089
+new table size = 32099
+new table size = 32117
+new table size = 32119
+new table size = 32141
+new table size = 32143
+new table size = 32159
+new table size = 32173
+new table size = 32183
+new table size = 32189
+new table size = 32191
+new table size = 32203
+new table size = 32213
+new table size = 32233
+new table size = 32237
+new table size = 32251
+new table size = 32257
+new table size = 32261
+new table size = 32297
+new table size = 32299
+new table size = 32303
+new table size = 32309
+new table size = 32321
+new table size = 32323
+new table size = 32327
+new table size = 32341
+new table size = 32353
+new table size = 32359
+new table size = 32363
+new table size = 32369
+new table size = 32371
+new table size = 32377
+new table size = 32381
+new table size = 32401
+new table size = 32411
+new table size = 32413
+new table size = 32423
+new table size = 32429
+new table size = 32441
+new table size = 32443
+new table size = 32467
+new table size = 32479
+new table size = 32491
+new table size = 32497
+new table size = 32503
+new table size = 32507
+new table size = 32531
+new table size = 32533
+new table size = 32537
+new table size = 32561
+new table size = 32563
+new table size = 32569
+new table size = 32573
+new table size = 32579
+new table size = 32587
+new table size = 32603
+new table size = 32609
+new table size = 32611
+new table size = 32621
+new table size = 32633
+new table size = 32647
+new table size = 32653
+new table size = 32687
+new table size = 32693
+new table size = 32707
+new table size = 32713
+new table size = 32717
+new table size = 32719
+new table size = 32749
+new table size = 32771
+new table size = 32779
+new table size = 32783
+new table size = 32789
+new table size = 32797
+new table size = 32801
+new table size = 32803
+new table size = 32831
+new table size = 32833
+new table size = 32839
+new table size = 32843
+new table size = 32869
+new table size = 32887
+new table size = 32909
+new table size = 32911
+new table size = 32917
+new table size = 32933
+new table size = 32939
+new table size = 32941
+new table size = 32957
+new table size = 32969
+new table size = 32971
+new table size = 32983
+new table size = 32987
+new table size = 32993
+new table size = 32999
+new table size = 33013
+new table size = 33023
+new table size = 33029
+new table size = 33037
+new table size = 33049
+new table size = 33053
+new table size = 33071
+new table size = 33073
+new table size = 33083
+new table size = 33091
+new table size = 33107
+new table size = 33113
+new table size = 33119
+new table size = 33149
+new table size = 33151
+new table size = 33161
+new table size = 33179
+new table size = 33181
+new table size = 33191
+new table size = 33199
+new table size = 33203
+new table size = 33211
+new table size = 33223
+new table size = 33247
+new table size = 33287
+new table size = 33289
+new table size = 33301
+new table size = 33311
+new table size = 33317
+new table size = 33329
+new table size = 33331
+new table size = 33343
+new table size = 33347
+new table size = 33349
+new table size = 33353
+new table size = 33359
+new table size = 33377
+new table size = 33391
+new table size = 33403
+new table size = 33409
+new table size = 33413
+new table size = 33427
+new table size = 33457
+new table size = 33461
+new table size = 33469
+new table size = 33479
+new table size = 33487
+new table size = 33493
+new table size = 33503
+new table size = 33521
+new table size = 33529
+new table size = 33533
+new table size = 33547
+new table size = 33563
+new table size = 33569
+new table size = 33577
+new table size = 33581
+new table size = 33587
+new table size = 33589
+new table size = 33599
+new table size = 33601
+new table size = 33613
+new table size = 33617
+new table size = 33619
+new table size = 33623
+new table size = 33629
+new table size = 33637
+new table size = 33641
+new table size = 33647
+new table size = 33679
+new table size = 33703
+new table size = 33713
+new table size = 33721
+new table size = 33739
+new table size = 33749
+new table size = 33751
+new table size = 33757
+new table size = 33767
+new table size = 33769
+new table size = 33773
+new table size = 33791
+new table size = 33797
+new table size = 33809
+new table size = 33811
+new table size = 33827
+new table size = 33829
+new table size = 33851
+new table size = 33857
+new table size = 33863
+new table size = 33871
+new table size = 33889
+new table size = 33893
+new table size = 33911
+new table size = 33923
+new table size = 33931
+new table size = 33937
+new table size = 33941
+new table size = 33961
+new table size = 33967
+new table size = 33997
+new table size = 34019
+new table size = 34031
+new table size = 34033
+new table size = 34039
+new table size = 34057
+new table size = 34061
+new table size = 34123
+new table size = 34127
+new table size = 34129
+new table size = 34141
+new table size = 34147
+new table size = 34157
+new table size = 34159
+new table size = 34171
+new table size = 34183
+new table size = 34211
+new table size = 34213
+new table size = 34217
+new table size = 34231
+new table size = 34253
+new table size = 34259
+new table size = 34261
+new table size = 34267
+new table size = 34273
+new table size = 34283
+new table size = 34297
+new table size = 34301
+new table size = 34303
+new table size = 34313
+new table size = 34319
+new table size = 34327
+new table size = 34337
+new table size = 34351
+new table size = 34361
+new table size = 34367
+new table size = 34369
+new table size = 34381
+new table size = 34403
+new table size = 34421
+new table size = 34429
+new table size = 34439
+new table size = 34457
+new table size = 34469
+new table size = 34471
+new table size = 34483
+new table size = 34487
+new table size = 34499
+new table size = 34501
+new table size = 34511
+new table size = 34513
+new table size = 34519
+new table size = 34537
+new table size = 34543
+new table size = 34549
+new table size = 34583
+new table size = 34589
+new table size = 34591
+new table size = 34603
+new table size = 34607
+new table size = 34613
+new table size = 34631
+new table size = 34649
+new table size = 34651
+new table size = 34667
+new table size = 34673
+new table size = 34679
+new table size = 34687
+new table size = 34693
+new table size = 34703
+new table size = 34721
+new table size = 34729
+new table size = 34739
+new table size = 34747
+new table size = 34757
+new table size = 34759
+new table size = 34763
+new table size = 34781
+new table size = 34807
+new table size = 34819
+new table size = 34841
+new table size = 34843
+new table size = 34847
+new table size = 34849
+new table size = 34871
+new table size = 34877
+new table size = 34883
+new table size = 34897
+new table size = 34913
+new table size = 34919
+new table size = 34939
+new table size = 34949
+new table size = 34961
+new table size = 34963
+new table size = 34981
+new table size = 35023
+new table size = 35027
+new table size = 35051
+new table size = 35053
+new table size = 35059
+new table size = 35069
+new table size = 35081
+new table size = 35083
+new table size = 35089
+new table size = 35099
+new table size = 35107
+new table size = 35111
+new table size = 35117
+new table size = 35129
+new table size = 35141
+new table size = 35149
+new table size = 35153
+new table size = 35159
+new table size = 35171
+new table size = 35201
+new table size = 35221
+new table size = 35227
+new table size = 35251
+new table size = 35257
+new table size = 35267
+new table size = 35279
+new table size = 35281
+new table size = 35291
+new table size = 35311
+new table size = 35317
+new table size = 35323
+new table size = 35327
+new table size = 35339
+new table size = 35353
+new table size = 35363
+new table size = 35381
+new table size = 35393
+new table size = 35401
+new table size = 35407
+new table size = 35419
+new table size = 35423
+new table size = 35437
+new table size = 35447
+new table size = 35449
+new table size = 35461
+new table size = 35491
+new table size = 35507
+new table size = 35509
+new table size = 35521
+new table size = 35527
+new table size = 35531
+new table size = 35533
+new table size = 35537
+new table size = 35543
+new table size = 35569
+new table size = 35573
+new table size = 35591
+new table size = 35593
+new table size = 35597
+new table size = 35603
+new table size = 35617
+new table size = 35671
+new table size = 35677
+new table size = 35729
+new table size = 35731
+new table size = 35747
+new table size = 35753
+new table size = 35759
+new table size = 35771
+new table size = 35797
+new table size = 35801
+new table size = 35803
+new table size = 35809
+new table size = 35831
+new table size = 35837
+new table size = 35839
+new table size = 35851
+new table size = 35863
+new table size = 35869
+new table size = 35879
+new table size = 35897
+new table size = 35899
+new table size = 35911
+new table size = 35923
+new table size = 35933
+new table size = 35951
+new table size = 35963
+new table size = 35969
+new table size = 35977
+new table size = 35983
+new table size = 35993
+new table size = 35999
+new table size = 36007
+new table size = 36011
+new table size = 36013
+new table size = 36017
+new table size = 36037
+new table size = 36061
+new table size = 36067
+new table size = 36073
+new table size = 36083
+new table size = 36097
+new table size = 36107
+new table size = 36109
+new table size = 36131
+new table size = 36137
+new table size = 36151
+new table size = 36161
+new table size = 36187
+new table size = 36191
+new table size = 36209
+new table size = 36217
+new table size = 36229
+new table size = 36241
+new table size = 36251
+new table size = 36263
+new table size = 36269
+new table size = 36277
+new table size = 36293
+new table size = 36299
+new table size = 36307
+new table size = 36313
+new table size = 36319
+new table size = 36341
+new table size = 36343
+new table size = 36353
+new table size = 36373
+new table size = 36383
+new table size = 36389
+new table size = 36433
+new table size = 36451
+new table size = 36457
+new table size = 36467
+new table size = 36469
+new table size = 36473
+new table size = 36479
+new table size = 36493
+new table size = 36497
+new table size = 36523
+new table size = 36527
+new table size = 36529
+new table size = 36541
+new table size = 36551
+new table size = 36559
+new table size = 36563
+new table size = 36571
+new table size = 36583
+new table size = 36587
+new table size = 36599
+new table size = 36607
+new table size = 36629
+new table size = 36637
+new table size = 36643
+new table size = 36653
+new table size = 36671
+new table size = 36677
+new table size = 36683
+new table size = 36691
+new table size = 36697
+new table size = 36709
+new table size = 36713
+new table size = 36721
+new table size = 36739
+new table size = 36749
+new table size = 36761
+new table size = 36767
+new table size = 36779
+new table size = 36781
+new table size = 36787
+new table size = 36791
+new table size = 36793
+new table size = 36809
+new table size = 36821
