@@ -118,10 +118,14 @@ bool HashTableCuckoo::deleteItem(int key){
 void HashTableCuckoo::printTables(){
     std::cout << "TABLE 0" << std::endl;
     for(int i = 0; i < tableSize; i++) {
+        if (table0[i]->key == -1);
+        else
         std::cout << std::setw(6) << i << " | " << std::setw(6) << table0[i]->key << std::endl;
     }
     std::cout << "TABLE 1" << std::endl;
     for(int i = 0; i < tableSize; i++) {
+        if (table1[i]->key == -1);
+        else
         std::cout << std::setw(6) << i << " | " << std::setw(6) << table1[i]->key << std::endl;
     }
 }
