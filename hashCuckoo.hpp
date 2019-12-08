@@ -40,6 +40,8 @@ public:
     bool displace(nodeCuckoo* placeThis, nodeCuckoo* start);
     void rehash(); 
 
+    int getNumRehashes();
+
 };
 
 #endif

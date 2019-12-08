@@ -70,6 +70,9 @@ nodeCuckoo* HashTableCuckoo::createNode(int key, int table){
 }
 
 HashTableCuckoo::HashTableCuckoo(){
+    #ifdef DEBUG
+        std::cout << "make new tables" << std::endl; 
+    #endif
     this->tableSize= TABLE_SIZE;
     this->numRehashes = 0;
     table0 = new nodeCuckoo*[tableSize];
@@ -139,11 +142,16 @@ bool HashTableCuckoo::insertItem(int key){
         #endif
         // rehash required. 
         rehash(); // rehash tables
-        insert = insertItemHelper(key); // attempt insert again. 
+        cout << "finished rehashing, table is now " << tableSize << endl;
+        cout << "trying to insert " << key << " again" << endl;
+        insert = insertItemHelper(key); // attempt insert again.
+        cout << "insert: " << insert << endl;
     }
+    return insert;
 }
 // returns true if item is successfully placed. returns false otherwise. 
 bool HashTableCuckoo::insertItemHelper(int key){
+    if(key<0) return true; // no need to insert -1 / empty
     nodeCuckoo* n = searchItem(key);
     if(!n){
         // insert the node into table 0
@@ -229,7 +237,7 @@ void HashTableCuckoo::rehash(){
     numRehashes++;
     // increase table size
     int newTableSize = primes[numRehashes];
-
+    cout << "new table size = " << newTableSize << endl;
     // save old tables
     nodeCuckoo* *old_table0 = table0;
     nodeCuckoo* *old_table1 = table1;
@@ -249,16 +257,18 @@ void HashTableCuckoo::rehash(){
         #ifdef DEBUG
             std::cout << "  old_table0 value: " << old_table0[i]->key << std::endl; 
         #endif
-        bool tryTable0 = insertItem(old_table0[i]->key);
+        bool tryTable0 = insertItemHelper(old_table0[i]->key);
         #ifdef DEBUG
             std::cout << "  old_table1 value: " << old_table1[i]->key << std::endl; 
         #endif
-        bool tryTable1 = insertItem(old_table1[i]->key);
+        
+        bool tryTable1 = insertItemHelper(old_table1[i]->key);
 
         if(!tryTable0 || !tryTable1){ // if there is ever a failed insert, rehash again. 
             // rehash. Again. :(
             numRehashes++; 
             newTableSize = primes[numRehashes];
+            cout << "new table size = " << newTableSize << endl;
             delete [] table0;
             delete [] table1;
             table0 = new nodeCuckoo*[newTableSize];
@@ -267,11 +277,17 @@ void HashTableCuckoo::rehash(){
                 table0[i] = createNode(EMPTY, 0);
                 table1[i] = createNode(EMPTY, 1);
             }
-            i = 0; 
+            i = 0;
         } else {
             i++;
             if(i == tableSize) doneCopyingTables = true;
+            // cout << "copying at index: " << i << " ";
         }
     }
+    cout << "rehash complete" << endl;
     tableSize = newTableSize;
+}
+
+int HashTableCuckoo::getNumRehashes() {
+    return numRehashes;
 }
