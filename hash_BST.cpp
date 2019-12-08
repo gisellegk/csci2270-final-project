@@ -69,7 +69,7 @@ nodeBST* HashTableBST::insertIntoBST(nodeBST* currNode, int key){
   // this will either return the new node or nullptr
     if(currNode == nullptr) return nullptr; // just in case.
     if(currNode->key == key) {
-      std::cout << "found duplicate" << std::endl;
+      //std::cout << "found duplicate" << std::endl;
       return nullptr;
     }
     if(currNode->key > key) { // key is smaller. go left. 

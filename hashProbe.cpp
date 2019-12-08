@@ -21,7 +21,7 @@ bool HashTableProbe::insertItem(int key) {
 
     // Case 0: the index given is taken by the key we're inserting
     if (table[index] == key) {
-        cout << "duplicate entry: " << key << endl;
+        //cout << "duplicate entry: " << key << endl;
         return false;
     }
 
@@ -36,7 +36,7 @@ bool HashTableProbe::insertItem(int key) {
         // cout << "Probing at index: " << index << endl;
         // Check if the key has been entered already
         if (table[index] == key) {
-            cout << "duplicate entry: " << key << endl;
+            //cout << "duplicate entry: " << key << endl;
             return false;
         }
 

@@ -49,7 +49,7 @@ bool HashTableLL::insertItem(int key) {
         table[index] = newNode;
         return true;
     } else {
-        cout<<"duplicate entry: "<<key<<endl;
+        //cout<<"duplicate entry: "<<key<<endl;
         return false;
     }
 }
