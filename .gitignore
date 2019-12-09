@@ -3,3 +3,5 @@ timing
 timing.exe
 *.exe
 *.gch
+.vscode/launch.json
+.vscode/tasks.json
