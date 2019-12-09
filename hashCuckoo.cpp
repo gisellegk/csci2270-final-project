@@ -1021,7 +1021,7 @@ bool HashTableCuckoo::displace(nodeCuckoo* placeThis, nodeCuckoo* startNode, int
 
 bool HashTableCuckoo::rehash(){
     //#ifdef DEBUG
-        std::cout << "attempt rehash " << numRehashes << std::endl; 
+        // std::cout << "attempt rehash " << numRehashes << std::endl; 
     //#endif
     numRehashes++;
     // increase table size
@@ -1043,6 +1043,11 @@ bool HashTableCuckoo::rehash(){
     for (int i=0; i < tableSize; i++) {
         // Insert and if it fails, return false and new rehash needed
         if (!insertItemHelper(old_table0[i]->key, newTableSize)) {
+            // Delete the failed rehashed table
+            for (int i = 0; i < newTableSize; i++) {
+                delete table0[i];
+                delete table1[i];
+            }
             delete [] table0;
             delete [] table1;
             table0 = old_table0;
@@ -1051,6 +1056,10 @@ bool HashTableCuckoo::rehash(){
         }
 
         if (!insertItemHelper(old_table1[i]->key, newTableSize)) {
+            for (int i = 0; i < newTableSize; i++) {
+                delete table0[i];
+                delete table1[i];
+            }
             delete [] table0;
             delete [] table1;
             table0 = old_table0;
