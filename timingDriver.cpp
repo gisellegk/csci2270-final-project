@@ -16,7 +16,7 @@ int main(int argc, char const *argv[]) {
     string fileName = argv[1];
     ifstream inputFile (fileName);
 
-    float loadFactor = .1;
+    float loadFactor = .2;
 
     cout << "Creating a table with LL collision implementation and hash function 0" << endl;
     HashTableLL* llHash0 = new HashTableLL(0);
@@ -33,8 +33,8 @@ int main(int argc, char const *argv[]) {
     cout << "Creating a table with linear probing and hash function 1" << endl;
     HashTableProbe* probeHash1 = new HashTableProbe(1);    
 
-    cout << "Creating a table with cuckoo hasing" << endl;
-    HashTableCuckoo* cuckooHash = new HashTableCuckoo();
+    //cout << "Creating a table with cuckoo hasing" << endl;
+    //HashTableCuckoo* cuckooHash = new HashTableCuckoo();
 
     cout << "Getting a load factor of " << loadFactor << endl;
     int maxData1 = floor(loadFactor * TABLE_SIZE);
@@ -73,7 +73,7 @@ int main(int argc, char const *argv[]) {
     for (int i = 0; i < 100; i++ ) {
         llHash0->insertItem(firstDataSet[i]);
         auto time = std::chrono::high_resolution_clock::now();
-        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count()<< endl;
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     auto endTime = std::chrono::high_resolution_clock::now();
     auto execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -84,7 +84,7 @@ int main(int argc, char const *argv[]) {
     for (int i = 0; i < 100; i++ ) {
         llHash1->insertItem(firstDataSet[i]);
         auto time = std::chrono::high_resolution_clock::now();
-        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count()<< endl;
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -95,7 +95,7 @@ int main(int argc, char const *argv[]) {
     for (int i = 0; i < 100; i++ ) {
         bstHash0->insertItem(firstDataSet[i]);
         auto time = std::chrono::high_resolution_clock::now();
-        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count()<< endl;
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -106,7 +106,7 @@ int main(int argc, char const *argv[]) {
     for (int i = 0; i < 100; i++ ) {
         bstHash1->insertItem(firstDataSet[i]);
         auto time = std::chrono::high_resolution_clock::now();
-        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count()<< endl;
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -117,7 +117,7 @@ int main(int argc, char const *argv[]) {
     for (int i = 0; i < 100; i++ ) {
         probeHash0->insertItem(firstDataSet[i]);
         auto time = std::chrono::high_resolution_clock::now();
-        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count()<< endl;
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -128,7 +128,7 @@ int main(int argc, char const *argv[]) {
     for (int i = 0; i < 100; i++ ) {
         probeHash1->insertItem(firstDataSet[i]);
         auto time = std::chrono::high_resolution_clock::now();
-        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count()<< endl;
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -152,6 +152,8 @@ int main(int argc, char const *argv[]) {
     startTime = chrono::high_resolution_clock::now();
     for (int i = 0; i < 100; i++ ) {
         llHash0->searchItem(firstDataSet[i]);
+        auto time = std::chrono::high_resolution_clock::now();
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -161,6 +163,8 @@ int main(int argc, char const *argv[]) {
     startTime = chrono::high_resolution_clock::now();
     for (int i = 0; i < 100; i++ ) {
         llHash1->searchItem(firstDataSet[i]);
+        auto time = std::chrono::high_resolution_clock::now();
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -170,6 +174,8 @@ int main(int argc, char const *argv[]) {
     startTime = chrono::high_resolution_clock::now();
     for (int i = 0; i < 100; i++ ) {
         bstHash0->searchItem(firstDataSet[i]);
+        auto time = std::chrono::high_resolution_clock::now();
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -179,6 +185,8 @@ int main(int argc, char const *argv[]) {
     startTime = chrono::high_resolution_clock::now();
     for (int i = 0; i < 100; i++ ) {
         bstHash1->searchItem(firstDataSet[i]);
+        auto time = std::chrono::high_resolution_clock::now();
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -188,6 +196,8 @@ int main(int argc, char const *argv[]) {
     startTime = chrono::high_resolution_clock::now();
     for (int i = 0; i < 100; i++ ) {
         probeHash0->searchItem(firstDataSet[i]);
+        auto time = std::chrono::high_resolution_clock::now();
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -197,6 +207,8 @@ int main(int argc, char const *argv[]) {
     startTime = chrono::high_resolution_clock::now();
     for (int i = 0; i < 100; i++ ) {
         probeHash1->searchItem(firstDataSet[i]);
+        auto time = std::chrono::high_resolution_clock::now();
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -216,6 +228,8 @@ int main(int argc, char const *argv[]) {
     startTime = chrono::high_resolution_clock::now();
     for (int i = 0; i < 100; i++ ) {
         llHash0->deleteItem(firstDataSet[i]);
+        auto time = std::chrono::high_resolution_clock::now();
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -225,6 +239,8 @@ int main(int argc, char const *argv[]) {
     startTime = chrono::high_resolution_clock::now();
     for (int i = 0; i < 100; i++ ) {
         llHash1->deleteItem(firstDataSet[i]);
+        auto time = std::chrono::high_resolution_clock::now();
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -234,6 +250,8 @@ int main(int argc, char const *argv[]) {
     startTime = chrono::high_resolution_clock::now();
     for (int i = 0; i < 100; i++ ) {
         bstHash0->deleteItem(firstDataSet[i]);
+        auto time = std::chrono::high_resolution_clock::now();
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -243,6 +261,8 @@ int main(int argc, char const *argv[]) {
     startTime = chrono::high_resolution_clock::now();
     for (int i = 0; i < 100; i++ ) {
         bstHash1->deleteItem(firstDataSet[i]);
+        auto time = std::chrono::high_resolution_clock::now();
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -252,6 +272,8 @@ int main(int argc, char const *argv[]) {
     startTime = chrono::high_resolution_clock::now();
     for (int i = 0; i < 100; i++ ) {
         probeHash0->deleteItem(firstDataSet[i]);
+        auto time = std::chrono::high_resolution_clock::now();
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
@@ -261,6 +283,8 @@ int main(int argc, char const *argv[]) {
     startTime = chrono::high_resolution_clock::now();
     for (int i = 0; i < 100; i++ ) {
         probeHash1->deleteItem(firstDataSet[i]);
+        auto time = std::chrono::high_resolution_clock::now();
+        cout << chrono::duration_cast<std::chrono::microseconds> (time-startTime).count();
     }
     endTime = std::chrono::high_resolution_clock::now();
     execTime = chrono::duration_cast<std::chrono::microseconds> (endTime-startTime).count();
