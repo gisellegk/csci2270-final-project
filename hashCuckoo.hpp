@@ -36,9 +36,9 @@ public:
 
     // Inserts a key into hash table
     bool insertItem(int key);
-    bool insertItemHelper(int key);
-    bool displace(nodeCuckoo* placeThis, nodeCuckoo* start);
-    void rehash(); 
+    bool insertItemHelper(int key, int newTableSize);
+    bool displace(nodeCuckoo* placeThis, nodeCuckoo* start, int newTableSize);
+    bool rehash(); 
 
     int getNumRehashes();
 
